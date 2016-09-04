@@ -18,6 +18,8 @@
 		716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4A91D7B1AB900BCA6F0 /* WorkViewController.m */; };
 		716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */; };
 		716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */; };
+		716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4B21D7C682600BCA6F0 /* MainViewController.m */; };
+		716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4B51D7C6CD800BCA6F0 /* Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMViewController.m; sourceTree = "<group>"; };
 		716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberMViewController.h; sourceTree = "<group>"; };
 		716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberMViewController.m; sourceTree = "<group>"; };
+		716AB4B11D7C682500BCA6F0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		716AB4B21D7C682600BCA6F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		716AB4B41D7C6CD800BCA6F0 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		716AB4B51D7C6CD800BCA6F0 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7165B7831D75D66000012FA2 /* readme */,
+				7165B7851D75D68400012FA2 /* Define.h */,
 				7165B74F1D75D59B00012FA2 /* MeiLing */,
 				7165B7691D75D59B00012FA2 /* MeiLingTests */,
 				7165B7741D75D59B00012FA2 /* MeiLingUITests */,
@@ -111,7 +118,8 @@
 		7165B74F1D75D59B00012FA2 /* MeiLing */ = {
 			isa = PBXGroup;
 			children = (
-				7165B7851D75D68400012FA2 /* Define.h */,
+				716AB4B11D7C682500BCA6F0 /* MainViewController.h */,
+				716AB4B21D7C682600BCA6F0 /* MainViewController.m */,
 				716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */,
 				716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */,
 				716AB4AB1D7B1AD600BCA6F0 /* OrderMViewController.h */,
@@ -191,6 +199,8 @@
 		7165B78A1D75D70A00012FA2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				716AB4B41D7C6CD800BCA6F0 /* Tool.h */,
+				716AB4B51D7C6CD800BCA6F0 /* Tool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -327,6 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7165B7551D75D59B00012FA2 /* AppDelegate.m in Sources */,
+				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
+				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
@@ -478,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leiganzheng.MeiLing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -490,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leiganzheng.MeiLing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
