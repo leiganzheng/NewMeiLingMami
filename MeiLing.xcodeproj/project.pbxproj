@@ -15,6 +15,9 @@
 		7165B76B1D75D59B00012FA2 /* MeiLingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7165B76A1D75D59B00012FA2 /* MeiLingTests.m */; };
 		7165B7761D75D59B00012FA2 /* MeiLingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7165B7751D75D59B00012FA2 /* MeiLingUITests.m */; };
 		7165B7841D75D66000012FA2 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 7165B7831D75D66000012FA2 /* readme */; };
+		716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4A91D7B1AB900BCA6F0 /* WorkViewController.m */; };
+		716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */; };
+		716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		7165B7771D75D59B00012FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7165B7831D75D66000012FA2 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = SOURCE_ROOT; };
 		7165B7851D75D68400012FA2 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = SOURCE_ROOT; };
+		716AB4A81D7B1AB900BCA6F0 /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
+		716AB4A91D7B1AB900BCA6F0 /* WorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
+		716AB4AB1D7B1AD600BCA6F0 /* OrderMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMViewController.h; sourceTree = "<group>"; };
+		716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMViewController.m; sourceTree = "<group>"; };
+		716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberMViewController.h; sourceTree = "<group>"; };
+		716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				7165B7851D75D68400012FA2 /* Define.h */,
+				716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */,
+				716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */,
+				716AB4AB1D7B1AD600BCA6F0 /* OrderMViewController.h */,
+				716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */,
+				716AB4A81D7B1AB900BCA6F0 /* WorkViewController.h */,
+				716AB4A91D7B1AB900BCA6F0 /* WorkViewController.m */,
 				7165B7861D75D70A00012FA2 /* Base */,
 				7165B7871D75D70A00012FA2 /* Extension */,
 				7165B78A1D75D70A00012FA2 /* Tools */,
@@ -312,7 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7165B7551D75D59B00012FA2 /* AppDelegate.m in Sources */,
+				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
+				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
+				716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
