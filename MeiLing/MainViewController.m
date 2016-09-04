@@ -9,6 +9,13 @@
 #import "MainViewController.h"
 #import "Tool.h"
 #import "Define.h"
+#import "OrderMViewController.h"
+#import "WorkViewController.h"
+#import "MemberMViewController.h"
+#import "UIResponder+StoryBoard.h"
+#import "CareDayLogViewController.h"
+#import "ActivityDayLogViewController.h"
+#import "AppointmentMViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
@@ -60,6 +67,43 @@
     
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc ;
+    if (indexPath.row == 0) {
+        vc = [WorkViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+    }else if(indexPath.row == 1){
+        vc = [OrderMViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+    }else if(indexPath.row == 2){
+
+        vc = [MemberMViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+
+        
+    }else if(indexPath.row == 3){
+        vc = [CareDayLogViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+    }else if(indexPath.row == 4){
+        
+        vc = [ActivityDayLogViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+    }else if(indexPath.row == 5){
+        vc = [AppointmentMViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+
+        
+    }else if(indexPath.row == 6){
+        
+    }
+    if (vc != nil) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
 #pragma mark --UICollectionViewDelegateFlowLayout
 //定义每个UICollectionView 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -71,6 +115,7 @@
 {
     return UIEdgeInsetsMake(5, 5, 5, 5);
 }
+
 #pragma mark - private method
 
 - (void)searchprogram{

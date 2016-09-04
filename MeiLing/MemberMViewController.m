@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,40,40)];
+    [rightButton setImage:[UIImage imageNamed:@"加"] forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - private method
+- (void)add{
+    
 }
-*/
+
+
 
 @end
