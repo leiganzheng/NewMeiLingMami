@@ -36,6 +36,7 @@
 		BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */; };
 		BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */; };
 		BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE91D7D497600370D14 /* AccountInfoViewController.m */; };
+		BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashViewController.m; sourceTree = "<group>"; };
 		BB2DBBE81D7D497600370D14 /* AccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfoViewController.h; sourceTree = "<group>"; };
 		BB2DBBE91D7D497600370D14 /* AccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfoViewController.m; sourceTree = "<group>"; };
+		BB2DBBF71D7D501B00370D14 /* ServiceProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceProjectViewController.h; sourceTree = "<group>"; };
+		BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceProjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,14 +266,16 @@
 		BB2DBBC41D7D10D300370D14 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				716AB4B11D7C682500BCA6F0 /* MainViewController.h */,
+				716AB4B21D7C682600BCA6F0 /* MainViewController.m */,
 				716AB4A81D7B1AB900BCA6F0 /* WorkViewController.h */,
 				716AB4A91D7B1AB900BCA6F0 /* WorkViewController.m */,
 				716AB4AB1D7B1AD600BCA6F0 /* OrderMViewController.h */,
 				716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */,
 				716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */,
 				716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */,
-				716AB4B11D7C682500BCA6F0 /* MainViewController.h */,
-				716AB4B21D7C682600BCA6F0 /* MainViewController.m */,
+				BB2DBBF71D7D501B00370D14 /* ServiceProjectViewController.h */,
+				BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
 				BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */,
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
+				BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */,
 				BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */,
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,

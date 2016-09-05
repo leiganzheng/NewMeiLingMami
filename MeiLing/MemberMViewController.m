@@ -7,6 +7,8 @@
 //
 
 #import "MemberMViewController.h"
+#import "CustomInfoViewController.h"
+#import "UIResponder+StoryBoard.h"
 
 @interface MemberMViewController ()
 
@@ -30,7 +32,7 @@
 
 #pragma mark - private method
 - (void)add{
-    
+    [self.navigationController pushViewController:[CustomInfoViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
 }
 
 

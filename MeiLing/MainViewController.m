@@ -16,6 +16,7 @@
 #import "CareDayLogViewController.h"
 #import "ActivityDayLogViewController.h"
 #import "AppointmentMViewController.h"
+#import "ServiceProjectViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
@@ -84,7 +85,7 @@
 
         
     }else if(indexPath.row == 3){
-        vc = [CareDayLogViewController CreateFromStoryboardWithName:@"Main"];
+        vc = [ServiceProjectViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
         
     }else if(indexPath.row == 4){
