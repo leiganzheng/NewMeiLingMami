@@ -37,7 +37,7 @@
 -(void)addLine:(UIView *)v withColor:(UIColor *)color{
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, v.frame.size.height-1, v.frame.size.width, 0.5)];
     line.backgroundColor = color;
-    [v addSubview:v];
+    [v addSubview:line];
 }
 - (void)enterRootViewController:(UIViewController *)vc animated:(BOOL)animated{
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;

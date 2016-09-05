@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets  = NO;
     self.data = @[@[@"",@"",@""],@[@""],@[@"预约美容师"],@[@"＊预约时间"],@[@"＊支付方式"],@[@"优惠卷"],@[@""]];
 }
 

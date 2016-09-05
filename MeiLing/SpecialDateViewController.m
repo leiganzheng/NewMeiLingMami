@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"特殊日期";
+    for (UIView *v in self.view.subviews) {
+        if ([v isKindOfClass:[UIButton class]]) {
+            v.layer.cornerRadius = 5;
+            v.layer.masksToBounds = YES;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

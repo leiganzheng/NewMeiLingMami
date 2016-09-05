@@ -30,7 +30,6 @@
     _textV.layer.borderWidth = 0.5;
     _textV.layer.cornerRadius = 5;
     _textV.layer.masksToBounds = YES;
-    [self.customTable reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

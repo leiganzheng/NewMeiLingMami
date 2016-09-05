@@ -17,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets  = NO;
+    for (UIView *v in self.view.subviews) {
+        if ([v isKindOfClass:[UIButton class]]) {
+            v.layer.cornerRadius = 5;
+            v.layer.masksToBounds = YES;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.data = @[@[@"梁女士：136-xxx－xxx",@"上次服务时间：2016-08-09 21:09",@"近三个月：到店10次 上门2次",@""],@[@"账户信息",@"订单信息",@"护理日志",@"特殊日期",@"私密生活",@"私密话题",@"销售日志"]];
 }
 
@@ -48,6 +49,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.5;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0 && indexPath.row == 3) {
@@ -71,11 +76,14 @@
             // Create a cell to display an ingredient.
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:showUserInfoCellIdentifier];
+            if (indexPath.section != 0) {
+                cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+            }
         }
         
         // Configure the cell.
         if (indexPath.section != 0) {
-            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
         cell.textLabel.text = self.data[indexPath.section][indexPath.row];
         [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
@@ -88,7 +96,7 @@
     UIViewController *vc;
     switch (indexPath.row) {
         case 0:
-            
+            vc = [AccountInfoViewController CreateFromStoryboardWithName:@"Main"];
             break;
         case 1:
             vc = [OrderMViewController CreateFromStoryboardWithName:@"Main"];
