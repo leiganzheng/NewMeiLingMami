@@ -1,5 +1,5 @@
 //
-//  CancelAppointViewController.h
+//  AccountInfoViewController.h
 //  MeiLing
 //
 //  Created by leiganzheng on 16/9/5.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CancelAppointViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface AccountInfoViewController : UIViewController
 
 @end

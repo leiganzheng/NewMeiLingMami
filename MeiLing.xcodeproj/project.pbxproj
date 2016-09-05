@@ -30,14 +30,12 @@
 		BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */; };
 		BB2DBBCB1D7D120A00370D14 /* PrivateLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBCA1D7D120A00370D14 /* PrivateLifeViewController.m */; };
 		BB2DBBCE1D7D139300370D14 /* SpecialDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */; };
-		BB2DBBD11D7D154500370D14 /* CancelAppointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD01D7D154500370D14 /* CancelAppointViewController.m */; };
-		BB2DBBD41D7D15C400370D14 /* ShangzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD31D7D15C400370D14 /* ShangzhongViewController.m */; };
-		BB2DBBD71D7D166900370D14 /* XiaZhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD61D7D166900370D14 /* XiaZhongViewController.m */; };
 		BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */; };
 		BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */; };
 		BB2DBBE01D7D1B7000370D14 /* RechargeableCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */; };
 		BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */; };
 		BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */; };
+		BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE91D7D497600370D14 /* AccountInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +84,8 @@
 		716AB4B51D7C6CD800BCA6F0 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		716AB4B71D7C85A700BCA6F0 /* UIResponder+StoryBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+StoryBoard.h"; sourceTree = "<group>"; };
 		716AB4B81D7C85A700BCA6F0 /* UIResponder+StoryBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+StoryBoard.m"; sourceTree = "<group>"; };
-		716AB4BA1D7C8FC000BCA6F0 /* CareDayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareDayLogViewController.h; sourceTree = "<group>"; };
-		716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareDayLogViewController.m; sourceTree = "<group>"; };
+		716AB4BA1D7C8FC000BCA6F0 /* CareDayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CareDayLogViewController.h; path = ../CareDayLogViewController.h; sourceTree = "<group>"; };
+		716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareDayLogViewController.m; path = ../CareDayLogViewController.m; sourceTree = "<group>"; };
 		716AB4BD1D7C8FD600BCA6F0 /* ActivityDayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDayLogViewController.h; sourceTree = "<group>"; };
 		716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDayLogViewController.m; sourceTree = "<group>"; };
 		716AB4C01D7C903400BCA6F0 /* AppointmentMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentMViewController.h; path = ../AppointmentMViewController.h; sourceTree = "<group>"; };
@@ -96,30 +94,26 @@
 		BB2DBBBC1D7CFDA000370D14 /* MakeAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MakeAppointViewController.m; path = ../MakeAppointViewController.m; sourceTree = "<group>"; };
 		BB2DBBBE1D7D094100370D14 /* DistributionCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionCustomerViewController.h; sourceTree = "<group>"; };
 		BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionCustomerViewController.m; sourceTree = "<group>"; };
-		BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInfoViewController.h; sourceTree = "<group>"; };
-		BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInfoViewController.m; sourceTree = "<group>"; };
-		BB2DBBC61D7D114200370D14 /* PrivateTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateTopicViewController.h; sourceTree = "<group>"; };
-		BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateTopicViewController.m; sourceTree = "<group>"; };
-		BB2DBBC91D7D120A00370D14 /* PrivateLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateLifeViewController.h; sourceTree = "<group>"; };
-		BB2DBBCA1D7D120A00370D14 /* PrivateLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateLifeViewController.m; sourceTree = "<group>"; };
-		BB2DBBCC1D7D139300370D14 /* SpecialDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDateViewController.h; sourceTree = "<group>"; };
-		BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDateViewController.m; sourceTree = "<group>"; };
-		BB2DBBCF1D7D154500370D14 /* CancelAppointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelAppointViewController.h; sourceTree = "<group>"; };
-		BB2DBBD01D7D154500370D14 /* CancelAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelAppointViewController.m; sourceTree = "<group>"; };
-		BB2DBBD21D7D15C400370D14 /* ShangzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShangzhongViewController.h; sourceTree = "<group>"; };
-		BB2DBBD31D7D15C400370D14 /* ShangzhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShangzhongViewController.m; sourceTree = "<group>"; };
-		BB2DBBD51D7D166900370D14 /* XiaZhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiaZhongViewController.h; sourceTree = "<group>"; };
-		BB2DBBD61D7D166900370D14 /* XiaZhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiaZhongViewController.m; sourceTree = "<group>"; };
-		BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalSettingViewController.h; sourceTree = "<group>"; };
-		BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalSettingViewController.m; sourceTree = "<group>"; };
-		BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesLogViewController.h; sourceTree = "<group>"; };
-		BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesLogViewController.m; sourceTree = "<group>"; };
+		BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInfoViewController.h; path = ../CustomInfoViewController.h; sourceTree = "<group>"; };
+		BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomInfoViewController.m; path = ../CustomInfoViewController.m; sourceTree = "<group>"; };
+		BB2DBBC61D7D114200370D14 /* PrivateTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivateTopicViewController.h; path = ../PrivateTopicViewController.h; sourceTree = "<group>"; };
+		BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivateTopicViewController.m; path = ../PrivateTopicViewController.m; sourceTree = "<group>"; };
+		BB2DBBC91D7D120A00370D14 /* PrivateLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivateLifeViewController.h; path = ../PrivateLifeViewController.h; sourceTree = "<group>"; };
+		BB2DBBCA1D7D120A00370D14 /* PrivateLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivateLifeViewController.m; path = ../PrivateLifeViewController.m; sourceTree = "<group>"; };
+		BB2DBBCC1D7D139300370D14 /* SpecialDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialDateViewController.h; path = ../SpecialDateViewController.h; sourceTree = "<group>"; };
+		BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecialDateViewController.m; path = ../SpecialDateViewController.m; sourceTree = "<group>"; };
+		BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalSettingViewController.h; path = ../GoalSettingViewController.h; sourceTree = "<group>"; };
+		BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalSettingViewController.m; path = ../GoalSettingViewController.m; sourceTree = "<group>"; };
+		BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalesLogViewController.h; path = ../SalesLogViewController.h; sourceTree = "<group>"; };
+		BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalesLogViewController.m; path = ../SalesLogViewController.m; sourceTree = "<group>"; };
 		BB2DBBDE1D7D1B7000370D14 /* RechargeableCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeableCardViewController.h; sourceTree = "<group>"; };
 		BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeableCardViewController.m; sourceTree = "<group>"; };
 		BB2DBBE11D7D1D8300370D14 /* YearCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearCardViewController.h; sourceTree = "<group>"; };
 		BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearCardViewController.m; sourceTree = "<group>"; };
 		BB2DBBE41D7D1E0D00370D14 /* CashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashViewController.h; sourceTree = "<group>"; };
 		BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashViewController.m; sourceTree = "<group>"; };
+		BB2DBBE81D7D497600370D14 /* AccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfoViewController.h; sourceTree = "<group>"; };
+		BB2DBBE91D7D497600370D14 /* AccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,26 +166,13 @@
 		7165B74F1D75D59B00012FA2 /* MeiLing */ = {
 			isa = PBXGroup;
 			children = (
+				BB2DBBE71D7D489600370D14 /* Customer */,
 				BB2DBBC51D7D111700370D14 /* AppointMement */,
 				BB2DBBC41D7D10D300370D14 /* Main */,
-				716AB4BA1D7C8FC000BCA6F0 /* CareDayLogViewController.h */,
-				716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */,
 				716AB4BD1D7C8FD600BCA6F0 /* ActivityDayLogViewController.h */,
 				716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */,
 				BB2DBBBE1D7D094100370D14 /* DistributionCustomerViewController.h */,
 				BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */,
-				BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */,
-				BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */,
-				BB2DBBC61D7D114200370D14 /* PrivateTopicViewController.h */,
-				BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */,
-				BB2DBBC91D7D120A00370D14 /* PrivateLifeViewController.h */,
-				BB2DBBCA1D7D120A00370D14 /* PrivateLifeViewController.m */,
-				BB2DBBCC1D7D139300370D14 /* SpecialDateViewController.h */,
-				BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */,
-				BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */,
-				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
-				BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */,
-				BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */,
 				BB2DBBDE1D7D1B7000370D14 /* RechargeableCardViewController.h */,
 				BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */,
 				BB2DBBE11D7D1D8300370D14 /* YearCardViewController.h */,
@@ -301,14 +282,31 @@
 				716AB4C11D7C903400BCA6F0 /* AppointmentMViewController.m */,
 				BB2DBBBB1D7CFDA000370D14 /* MakeAppointViewController.h */,
 				BB2DBBBC1D7CFDA000370D14 /* MakeAppointViewController.m */,
-				BB2DBBCF1D7D154500370D14 /* CancelAppointViewController.h */,
-				BB2DBBD01D7D154500370D14 /* CancelAppointViewController.m */,
-				BB2DBBD21D7D15C400370D14 /* ShangzhongViewController.h */,
-				BB2DBBD31D7D15C400370D14 /* ShangzhongViewController.m */,
-				BB2DBBD51D7D166900370D14 /* XiaZhongViewController.h */,
-				BB2DBBD61D7D166900370D14 /* XiaZhongViewController.m */,
 			);
 			path = AppointMement;
+			sourceTree = "<group>";
+		};
+		BB2DBBE71D7D489600370D14 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */,
+				BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */,
+				716AB4BA1D7C8FC000BCA6F0 /* CareDayLogViewController.h */,
+				716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */,
+				BB2DBBC61D7D114200370D14 /* PrivateTopicViewController.h */,
+				BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */,
+				BB2DBBC91D7D120A00370D14 /* PrivateLifeViewController.h */,
+				BB2DBBCA1D7D120A00370D14 /* PrivateLifeViewController.m */,
+				BB2DBBCC1D7D139300370D14 /* SpecialDateViewController.h */,
+				BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */,
+				BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */,
+				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
+				BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */,
+				BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */,
+				BB2DBBE81D7D497600370D14 /* AccountInfoViewController.h */,
+				BB2DBBE91D7D497600370D14 /* AccountInfoViewController.m */,
+			);
+			path = Customer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,7 +443,6 @@
 				BB2DBBCB1D7D120A00370D14 /* PrivateLifeViewController.m in Sources */,
 				7165B7551D75D59B00012FA2 /* AppDelegate.m in Sources */,
 				BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */,
-				BB2DBBD71D7D166900370D14 /* XiaZhongViewController.m in Sources */,
 				BB2DBBCE1D7D139300370D14 /* SpecialDateViewController.m in Sources */,
 				716AB4BC1D7C8FC000BCA6F0 /* CareDayLogViewController.m in Sources */,
 				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
@@ -460,12 +457,11 @@
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
 				BB2DBBE01D7D1B7000370D14 /* RechargeableCardViewController.m in Sources */,
 				BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */,
-				BB2DBBD11D7D154500370D14 /* CancelAppointViewController.m in Sources */,
+				BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
 				716AB4C21D7C903400BCA6F0 /* AppointmentMViewController.m in Sources */,
 				716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */,
 				BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */,
-				BB2DBBD41D7D15C400370D14 /* ShangzhongViewController.m in Sources */,
 				716AB4B91D7C85A700BCA6F0 /* UIResponder+StoryBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

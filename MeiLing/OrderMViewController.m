@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"订单信息";
 }
 
 - (void)didReceiveMemoryWarning {

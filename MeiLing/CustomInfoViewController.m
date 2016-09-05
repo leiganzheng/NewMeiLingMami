@@ -9,6 +9,14 @@
 #import "CustomInfoViewController.h"
 #import "Tool.h"
 #import "Define.h"
+#import "UIResponder+StoryBoard.h"
+#import "PrivateLifeViewController.h"
+#import "PrivateTopicViewController.h"
+#import "SpecialDateViewController.h"
+#import "SalesLogViewController.h"
+#import "AccountInfoViewController.h"
+#import "OrderMViewController.h"
+#import "CareDayLogViewController.h"
 
 @interface CustomInfoViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
@@ -76,6 +84,36 @@
    
     
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc;
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+        case 1:
+            vc = [OrderMViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        case 2:
+            vc = [CareDayLogViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        case 3:
+            vc = [SpecialDateViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        case 4:
+            vc = [PrivateLifeViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        case 5:
+            vc = [PrivateTopicViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        case 6:
+            vc = [SalesLogViewController CreateFromStoryboardWithName:@"Main"];
+            break;
+        default:
+            break;
+    }
+    if (vc != nil) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
 
 @end
