@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title  = @"客户信息";
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.data = @[@[@"梁女士：136-xxx－xxx",@"上次服务时间：2016-08-09 21:09",@"近三个月：到店10次 上门2次",@""],@[@"账户信息",@"订单信息",@"护理日志",@"特殊日期",@"私密生活",@"私密话题",@"销售日志"]];
 }
