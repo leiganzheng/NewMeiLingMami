@@ -34,6 +34,11 @@
     v.layer.borderColor = kThemeColor.CGColor;
     v.layer.borderWidth = 1;
 }
+-(void)addLine:(UIView *)v withColor:(UIColor *)color{
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, v.frame.size.height-1, v.frame.size.width, 0.5)];
+    line.backgroundColor = color;
+    [v addSubview:v];
+}
 - (void)enterRootViewController:(UIViewController *)vc animated:(BOOL)animated{
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     UIView *animationView = [[UIScreen mainScreen] snapshotViewAfterScreenUpdates:false];

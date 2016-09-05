@@ -13,4 +13,5 @@
 + (instancetype)sharedInstance;
 -(void)enterRootViewController:(UIViewController *)vc animated:(BOOL)animated;
 - (void)comfingView:(UIView *)v;
+-(void)addLine:(UIView *)v withColor:(UIColor *)color;
 @end
