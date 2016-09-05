@@ -23,8 +23,8 @@
 		716AB4B91D7C85A700BCA6F0 /* UIResponder+StoryBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4B81D7C85A700BCA6F0 /* UIResponder+StoryBoard.m */; };
 		716AB4BC1D7C8FC000BCA6F0 /* CareDayLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */; };
 		716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */; };
-		716AB4C21D7C903400BCA6F0 /* AppointmentMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C11D7C903400BCA6F0 /* AppointmentMViewController.m */; };
-		BB2DBBBD1D7CFDA000370D14 /* MakeAppointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBBC1D7CFDA000370D14 /* MakeAppointViewController.m */; };
+		716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */; };
+		716AB4C91D7D957000BCA6F0 /* MakeAppointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */; };
 		BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */; };
 		BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */; };
 		BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */; };
@@ -90,10 +90,10 @@
 		716AB4BB1D7C8FC000BCA6F0 /* CareDayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareDayLogViewController.m; path = ../CareDayLogViewController.m; sourceTree = "<group>"; };
 		716AB4BD1D7C8FD600BCA6F0 /* ActivityDayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDayLogViewController.h; sourceTree = "<group>"; };
 		716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDayLogViewController.m; sourceTree = "<group>"; };
-		716AB4C01D7C903400BCA6F0 /* AppointmentMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentMViewController.h; path = ../AppointmentMViewController.h; sourceTree = "<group>"; };
-		716AB4C11D7C903400BCA6F0 /* AppointmentMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentMViewController.m; path = ../AppointmentMViewController.m; sourceTree = "<group>"; };
-		BB2DBBBB1D7CFDA000370D14 /* MakeAppointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeAppointViewController.h; path = ../MakeAppointViewController.h; sourceTree = "<group>"; };
-		BB2DBBBC1D7CFDA000370D14 /* MakeAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MakeAppointViewController.m; path = ../MakeAppointViewController.m; sourceTree = "<group>"; };
+		716AB4C41D7D957000BCA6F0 /* AppointmentMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentMViewController.h; sourceTree = "<group>"; };
+		716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentMViewController.m; sourceTree = "<group>"; };
+		716AB4C61D7D957000BCA6F0 /* MakeAppointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeAppointViewController.h; sourceTree = "<group>"; };
+		716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeAppointViewController.m; sourceTree = "<group>"; };
 		BB2DBBBE1D7D094100370D14 /* DistributionCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionCustomerViewController.h; sourceTree = "<group>"; };
 		BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionCustomerViewController.m; sourceTree = "<group>"; };
 		BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInfoViewController.h; path = ../CustomInfoViewController.h; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 		7165B74F1D75D59B00012FA2 /* MeiLing */ = {
 			isa = PBXGroup;
 			children = (
+				716AB4C31D7D94EC00BCA6F0 /* Appoint */,
 				BB2DBBE71D7D489600370D14 /* Customer */,
-				BB2DBBC51D7D111700370D14 /* AppointMement */,
 				BB2DBBC41D7D10D300370D14 /* Main */,
 				716AB4BD1D7C8FD600BCA6F0 /* ActivityDayLogViewController.h */,
 				716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */,
@@ -270,6 +270,17 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		716AB4C31D7D94EC00BCA6F0 /* Appoint */ = {
+			isa = PBXGroup;
+			children = (
+				716AB4C41D7D957000BCA6F0 /* AppointmentMViewController.h */,
+				716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */,
+				716AB4C61D7D957000BCA6F0 /* MakeAppointViewController.h */,
+				716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */,
+			);
+			path = Appoint;
+			sourceTree = "<group>";
+		};
 		BB2DBBC41D7D10D300370D14 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,17 +296,6 @@
 				BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		BB2DBBC51D7D111700370D14 /* AppointMement */ = {
-			isa = PBXGroup;
-			children = (
-				716AB4C01D7C903400BCA6F0 /* AppointmentMViewController.h */,
-				716AB4C11D7C903400BCA6F0 /* AppointmentMViewController.m */,
-				BB2DBBBB1D7CFDA000370D14 /* MakeAppointViewController.h */,
-				BB2DBBBC1D7CFDA000370D14 /* MakeAppointViewController.m */,
-			);
-			path = AppointMement;
 			sourceTree = "<group>";
 		};
 		BB2DBBE71D7D489600370D14 /* Customer */ = {
@@ -456,6 +456,7 @@
 				BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */,
 				BB2DBBCE1D7D139300370D14 /* SpecialDateViewController.m in Sources */,
 				716AB4BC1D7C8FC000BCA6F0 /* CareDayLogViewController.m in Sources */,
+				716AB4C91D7D957000BCA6F0 /* MakeAppointViewController.m in Sources */,
 				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
 				BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */,
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
@@ -464,14 +465,13 @@
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,
 				716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */,
-				BB2DBBBD1D7CFDA000370D14 /* MakeAppointViewController.m in Sources */,
 				BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */,
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
 				BB2DBBE01D7D1B7000370D14 /* RechargeableCardViewController.m in Sources */,
 				BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */,
 				BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */,
+				716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
-				716AB4C21D7C903400BCA6F0 /* AppointmentMViewController.m in Sources */,
 				716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */,
 				BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */,
 				716AB4B91D7C85A700BCA6F0 /* UIResponder+StoryBoard.m in Sources */,
