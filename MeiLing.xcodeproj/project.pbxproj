@@ -34,6 +34,10 @@
 		BB2DBBD41D7D15C400370D14 /* ShangzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD31D7D15C400370D14 /* ShangzhongViewController.m */; };
 		BB2DBBD71D7D166900370D14 /* XiaZhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD61D7D166900370D14 /* XiaZhongViewController.m */; };
 		BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */; };
+		BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */; };
+		BB2DBBE01D7D1B7000370D14 /* RechargeableCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */; };
+		BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */; };
+		BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +112,14 @@
 		BB2DBBD61D7D166900370D14 /* XiaZhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiaZhongViewController.m; sourceTree = "<group>"; };
 		BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalSettingViewController.h; sourceTree = "<group>"; };
 		BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalSettingViewController.m; sourceTree = "<group>"; };
+		BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesLogViewController.h; sourceTree = "<group>"; };
+		BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesLogViewController.m; sourceTree = "<group>"; };
+		BB2DBBDE1D7D1B7000370D14 /* RechargeableCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeableCardViewController.h; sourceTree = "<group>"; };
+		BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeableCardViewController.m; sourceTree = "<group>"; };
+		BB2DBBE11D7D1D8300370D14 /* YearCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearCardViewController.h; sourceTree = "<group>"; };
+		BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearCardViewController.m; sourceTree = "<group>"; };
+		BB2DBBE41D7D1E0D00370D14 /* CashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashViewController.h; sourceTree = "<group>"; };
+		BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,14 @@
 				BB2DBBCD1D7D139300370D14 /* SpecialDateViewController.m */,
 				BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */,
 				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
+				BB2DBBDB1D7D197000370D14 /* SalesLogViewController.h */,
+				BB2DBBDC1D7D197000370D14 /* SalesLogViewController.m */,
+				BB2DBBDE1D7D1B7000370D14 /* RechargeableCardViewController.h */,
+				BB2DBBDF1D7D1B7000370D14 /* RechargeableCardViewController.m */,
+				BB2DBBE11D7D1D8300370D14 /* YearCardViewController.h */,
+				BB2DBBE21D7D1D8300370D14 /* YearCardViewController.m */,
+				BB2DBBE41D7D1E0D00370D14 /* CashViewController.h */,
+				BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */,
 				7165B7861D75D70A00012FA2 /* Base */,
 				7165B7871D75D70A00012FA2 /* Extension */,
 				7165B78A1D75D70A00012FA2 /* Tools */,
@@ -424,6 +444,7 @@
 			files = (
 				BB2DBBCB1D7D120A00370D14 /* PrivateLifeViewController.m in Sources */,
 				7165B7551D75D59B00012FA2 /* AppDelegate.m in Sources */,
+				BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */,
 				BB2DBBD71D7D166900370D14 /* XiaZhongViewController.m in Sources */,
 				BB2DBBCE1D7D139300370D14 /* SpecialDateViewController.m in Sources */,
 				716AB4BC1D7C8FC000BCA6F0 /* CareDayLogViewController.m in Sources */,
@@ -432,9 +453,12 @@
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
 				BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */,
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
+				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,
 				716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */,
 				BB2DBBBD1D7CFDA000370D14 /* MakeAppointViewController.m in Sources */,
+				BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */,
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
+				BB2DBBE01D7D1B7000370D14 /* RechargeableCardViewController.m in Sources */,
 				BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */,
 				BB2DBBD11D7D154500370D14 /* CancelAppointViewController.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
