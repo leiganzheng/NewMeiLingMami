@@ -10,6 +10,7 @@
 #import "Define.h"
 #import "UIResponder+StoryBoard.h"
 #import "MakeAppointViewController.h"
+#import "Tool.h"
 
 typedef enum {
     kAppoint = 0,
@@ -58,7 +59,7 @@ typedef enum {
         }
         UIButton *btn = (UIButton *)[cell viewWithTag:100];
         [btn addTarget:self action:@selector(makeAppoint) forControlEvents:UIControlEventTouchUpInside];
-       
+        [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
          return cell;
     }else if (indexPath.row == 1){
         static NSString * showUserInfoCellIdentifier = @"Cell2";
@@ -80,7 +81,7 @@ typedef enum {
         
         UIButton *btn3 = (UIButton *)[cell viewWithTag:103];
         [btn3 addTarget:self action:@selector(cancelAppoint) forControlEvents:UIControlEventTouchUpInside];
-        
+       
         switch (self.orderType) {
             case 0:
                 [btn setTitleColor:kCyColorFromRGB(216, 128, 100) forState:UIControlStateNormal];
@@ -112,7 +113,7 @@ typedef enum {
             default:
                 break;
         }
-        
+        [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
          return cell;
     }else{
         static NSString * showUserInfoCellIdentifier = @"Cell3";
@@ -149,8 +150,9 @@ typedef enum {
             default:
                 break;
         }
-
-      
+        [[Tool sharedInstance] comfingViewMask:btn1];
+        [[Tool sharedInstance] comfingViewMask:btn];
+      [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
         return cell;
     }
     

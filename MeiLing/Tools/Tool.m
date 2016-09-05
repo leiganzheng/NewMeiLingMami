@@ -34,6 +34,11 @@
     v.layer.borderColor = kThemeColor.CGColor;
     v.layer.borderWidth = 1;
 }
+-(void)comfingViewMask:(UIView *)v{
+    v.layer.cornerRadius = 5;
+    v.layer.masksToBounds = YES;
+}
+
 -(void)addLine:(UIView *)v withColor:(UIColor *)color{
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, v.frame.size.height-1, v.frame.size.width, 0.5)];
     line.backgroundColor = color;

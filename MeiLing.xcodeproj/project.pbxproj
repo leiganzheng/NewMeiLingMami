@@ -25,6 +25,7 @@
 		716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4BE1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m */; };
 		716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */; };
 		716AB4C91D7D957000BCA6F0 /* MakeAppointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */; };
+		716AB4CD1D7DC63600BCA6F0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */; };
 		BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */; };
 		BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */; };
 		BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */; };
@@ -94,6 +95,8 @@
 		716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentMViewController.m; sourceTree = "<group>"; };
 		716AB4C61D7D957000BCA6F0 /* MakeAppointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeAppointViewController.h; sourceTree = "<group>"; };
 		716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeAppointViewController.m; sourceTree = "<group>"; };
+		716AB4CB1D7DC63600BCA6F0 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		BB2DBBBE1D7D094100370D14 /* DistributionCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionCustomerViewController.h; sourceTree = "<group>"; };
 		BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionCustomerViewController.m; sourceTree = "<group>"; };
 		BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInfoViewController.h; path = ../CustomInfoViewController.h; sourceTree = "<group>"; };
@@ -172,6 +175,7 @@
 		7165B74F1D75D59B00012FA2 /* MeiLing */ = {
 			isa = PBXGroup;
 			children = (
+				716AB4CA1D7DC62200BCA6F0 /* Me */,
 				716AB4C31D7D94EC00BCA6F0 /* Appoint */,
 				BB2DBBE71D7D489600370D14 /* Customer */,
 				BB2DBBC41D7D10D300370D14 /* Main */,
@@ -279,6 +283,15 @@
 				716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */,
 			);
 			path = Appoint;
+			sourceTree = "<group>";
+		};
+		716AB4CA1D7DC62200BCA6F0 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				716AB4CB1D7DC63600BCA6F0 /* MeViewController.h */,
+				716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */,
+			);
+			path = Me;
 			sourceTree = "<group>";
 		};
 		BB2DBBC41D7D10D300370D14 /* Main */ = {
@@ -472,6 +485,7 @@
 				BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */,
 				716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
+				716AB4CD1D7DC63600BCA6F0 /* MeViewController.m in Sources */,
 				716AB4B01D7C5ED500BCA6F0 /* MemberMViewController.m in Sources */,
 				BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */,
 				716AB4B91D7C85A700BCA6F0 /* UIResponder+StoryBoard.m in Sources */,

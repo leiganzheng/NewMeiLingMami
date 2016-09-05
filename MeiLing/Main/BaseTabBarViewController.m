@@ -20,7 +20,7 @@
     self.tabBar.barTintColor = kThemeColor;
     self.tabBar.tintColor = [UIColor whiteColor];
 // [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kThemeColor,NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
+//    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,8 @@
 //
 
 #import "MakeAppointViewController.h"
-
+#import "Tool.h"
+#import "Define.h"
 @interface MakeAppointViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
 @property (strong,nonatomic) NSArray *data;
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"立即预约";
     self.automaticallyAdjustsScrollViewInsets  = NO;
     self.data = @[@[@"",@"",@""],@[@""],@[@"预约美容师"],@[@"＊预约时间"],@[@"＊支付方式"],@[@"优惠卷"],@[@""]];
 }
@@ -35,6 +37,9 @@
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 7;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.5;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==  1) {
@@ -56,6 +61,10 @@
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                               reuseIdentifier:showUserInfoCellIdentifier];
             }
+            UIButton *btn1=(UIButton*)[cell viewWithTag:100];
+            [[Tool sharedInstance] comfingViewMask:btn1];
+            UIButton *btn2=(UIButton*)[cell viewWithTag:101];
+            [[Tool sharedInstance] comfingViewMask:btn2];
             return cell;
 
         }else if(indexPath.row == 1){
@@ -67,6 +76,8 @@
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                               reuseIdentifier:showUserInfoCellIdentifier];
             }
+            UIButton *btn1=(UIButton*)[cell viewWithTag:100];
+            [[Tool sharedInstance] comfingViewMask:btn1];
             return cell;
 
         }else{
@@ -78,6 +89,8 @@
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                               reuseIdentifier:showUserInfoCellIdentifier];
             }
+            UIButton *btn1=(UIButton*)[cell viewWithTag:100];
+            [[Tool sharedInstance] comfingViewMask:btn1];
             return cell;
  
         }
@@ -91,6 +104,8 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:showUserInfoCellIdentifier];
         }
+        UIButton *btn1=(UIButton*)[cell viewWithTag:100];
+        [[Tool sharedInstance] comfingViewMask:btn1];
         return cell;
     }else if (indexPath.section == 6){
         static NSString * showUserInfoCellIdentifier = @"cell5";
@@ -113,6 +128,7 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:showUserInfoCellIdentifier];
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.backgroundColor = kCyColorFromRGB(247, 247, 247);
         }
          cell.textLabel.text = self.data[indexPath.section][indexPath.row];
         return cell;

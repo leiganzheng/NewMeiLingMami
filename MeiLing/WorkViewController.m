@@ -8,6 +8,9 @@
 
 #import "WorkViewController.h"
 #import "Define.h"
+#import "UIResponder+StoryBoard.h"
+#import "GoalSettingViewController.h"
+
 @interface WorkViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
@@ -59,20 +62,20 @@
     _btnR3.layer.cornerRadius = 5;
     _btnR3.layer.masksToBounds = YES;
 
-    _btnC1.layer.cornerRadius = _btnC1.frame.size.width/2;
-    _btnC1.layer.masksToBounds = YES;
-    _btnC2.layer.cornerRadius = _btnC2.frame.size.width/2;
-    _btnC2.layer.masksToBounds = YES;
-    _btnC3.layer.cornerRadius = _btnC3.frame.size.width/2;
-    _btnC3.layer.masksToBounds = YES;
-    _btnC4.layer.cornerRadius = _btnC4.frame.size.width/2;
-    _btnC4.layer.masksToBounds = YES;
-    _btnC5.layer.cornerRadius = _btnC5.frame.size.width/2;
-    _btnC5.layer.masksToBounds = YES;
-    _btnC6.layer.cornerRadius = _btnC6.frame.size.width/2;
-    _btnC6.layer.masksToBounds = YES;
+//    _btnC1.layer.cornerRadius = _btnC1.frame.size.width/2;
+//    _btnC1.layer.masksToBounds = YES;
+//    _btnC2.layer.cornerRadius = _btnC2.frame.size.width/2;
+//    _btnC2.layer.masksToBounds = YES;
+//    _btnC3.layer.cornerRadius = _btnC3.frame.size.width/2;
+//    _btnC3.layer.masksToBounds = YES;
+//    _btnC4.layer.cornerRadius = _btnC4.frame.size.width/2;
+//    _btnC4.layer.masksToBounds = YES;
+//    _btnC5.layer.cornerRadius = _btnC5.frame.size.width/2;
+//    _btnC5.layer.masksToBounds = YES;
+//    _btnC6.layer.cornerRadius = _btnC6.frame.size.width/2;
+//    _btnC6.layer.masksToBounds = YES;
    
-    
+    [_btnR1 addTarget:self action:@selector(goalSet) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -81,14 +84,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)goalSet{
+    [self.navigationController pushViewController: [GoalSettingViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
 }
-*/
 
 @end
