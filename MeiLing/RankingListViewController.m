@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.title = @"排行榜";
     self.data = @[@"项目排行榜",@"产品排行榜",@"顾客排行榜",@"顾问排行榜",@"美容师排行榜",@"门店PK"];
+    self.images = @[@"项目排行榜",@"产品排行榜",@"顾客排行榜",@"顾问排行榜",@"美容师排行榜",@"门店PK"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,8 +48,9 @@
 {
     static NSString *const cellId = @"collection";
     UICollectionViewCell *cell = [_customCollectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor purpleColor];
-    
+    UIButton *btn = (UIButton *)[cell viewWithTag:100];
+    [btn setImage:self.images[indexPath.row] forState:UIControlStateNormal];
+    [btn setTitle:self.data[indexPath.row] forState:UIControlStateNormal];
     return cell;
 }
 

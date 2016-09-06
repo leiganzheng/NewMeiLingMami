@@ -9,6 +9,8 @@
 #import "MeViewController.h"
 #import "Tool.h"
 #import "Define.h"
+#import "UIResponder+StoryBoard.h"
+#import "WalletViewController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
@@ -80,6 +82,7 @@
             
             // Configure the cell.
             UIButton *btn = (UIButton *)[cell viewWithTag:100];
+            [btn addTarget:self action:@selector(walletVC) forControlEvents:UIControlEventTouchUpInside];
             UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
             UIButton *btn2 = (UIButton *)[cell viewWithTag:102];
             [[Tool sharedInstance] comfingView:btn1];
@@ -191,6 +194,9 @@
     
     
 }
-
+#pragma mark - private method
+- (void)walletVC{
+    [self.navigationController pushViewController:[WalletViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
+}
 
 @end

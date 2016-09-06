@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"新增充值卡";
-    self.data = @[];
-    self.subData = @[];
+    self.data = @[@"卡名称:",@"开卡金额:",@"赠送金额:",@"卡折扣:",@"开卡积分:",@"充值积分:",@"消费积分:",@"卡前缀:",@"有效期:",@"自定义:",@"卡号事例:"];
+    self.subData = @[@"请输入卡名称",@"请输入金额",@"输入赠送金额",@"",@"",@"",@"",@"",@"",@"",@""];
 }
 
 - (void)didReceiveMemoryWarning {

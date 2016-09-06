@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"新增年卡";
-    self.data = @[];
-    self.subData = @[];
+    self.data = @[@"卡名称:",@"服务项目:",@"服务次数:",@"员工服务:",@"开卡金额:",@"卡前缀:",@"有效期:",@"自定义:",@"单比消费上限:"];
+    self.subData = @[@"请输入卡名称",@"请输入服务项目",@"输入服务次数",@"",@"",@"",@"",@"",@""];
 }
 
 - (void)didReceiveMemoryWarning {
