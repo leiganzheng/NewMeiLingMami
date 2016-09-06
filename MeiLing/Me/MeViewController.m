@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我";
-    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     // Do any additional setup after loading the view.
 }
 
@@ -82,9 +82,9 @@
             UIButton *btn = (UIButton *)[cell viewWithTag:100];
             UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
             UIButton *btn2 = (UIButton *)[cell viewWithTag:102];
-            [[Tool sharedInstance] comfingViewMask:btn1];
-            [[Tool sharedInstance] comfingViewMask:btn];
-             [[Tool sharedInstance] comfingViewMask:btn2];
+            [[Tool sharedInstance] comfingView:btn1];
+            [[Tool sharedInstance] comfingView:btn];
+             [[Tool sharedInstance] comfingView:btn2];
             
             return cell;
 
@@ -178,10 +178,10 @@
             UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
             UIButton *btn2 = (UIButton *)[cell viewWithTag:102];
             UIButton *btn3 = (UIButton *)[cell viewWithTag:103];
-            [[Tool sharedInstance] comfingViewMask:btn1];
-            [[Tool sharedInstance] comfingViewMask:btn];
-            [[Tool sharedInstance] comfingViewMask:btn2];
-            [[Tool sharedInstance] comfingViewMask:btn3];
+            [[Tool sharedInstance] comfingView:btn1];
+            [[Tool sharedInstance] comfingView:btn];
+            [[Tool sharedInstance] comfingView:btn2];
+            [[Tool sharedInstance] comfingView:btn3];
             
             return cell;
 

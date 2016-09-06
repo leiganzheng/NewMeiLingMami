@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DataAnalysisViewController : UITabBarController
+@interface DataAnalysisViewController : UIViewController
 
 @end
