@@ -42,6 +42,7 @@
 		BB719DC01D7E476D00AB772E /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DBF1D7E476D00AB772E /* WalletViewController.m */; };
 		BB719DC31D7E4D1F00AB772E /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */; };
 		BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */; };
+		BB719DC91D7E99CD00AB772E /* MessageModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListViewController.m; sourceTree = "<group>"; };
 		BB719DC41D7E72BE00AB772E /* DataAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAnalysisViewController.h; path = ../DataAnalysisViewController.h; sourceTree = "<group>"; };
 		BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAnalysisViewController.m; path = ../DataAnalysisViewController.m; sourceTree = "<group>"; };
+		BB719DC71D7E99CD00AB772E /* MessageModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelViewController.h; sourceTree = "<group>"; };
+		BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
 				BB719DC11D7E4D1F00AB772E /* RankingListViewController.h */,
 				BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */,
+				BB719DC71D7E99CD00AB772E /* MessageModelViewController.h */,
+				BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */,
 				7165B7861D75D70A00012FA2 /* Base */,
 				7165B7871D75D70A00012FA2 /* Extension */,
 				7165B78A1D75D70A00012FA2 /* Tools */,
@@ -494,6 +499,7 @@
 				BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */,
 				BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */,
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
+				BB719DC91D7E99CD00AB772E /* MessageModelViewController.m in Sources */,
 				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,
 				716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */,
 				BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */,
