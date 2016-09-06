@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L1J-cV-vbl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L1J-cV-vbl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -3170,6 +3170,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhH-ha-VkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="10442"/>
+        </scene>
+        <!--Wallet View Controller-->
+        <scene sceneID="2VI-bX-mhE">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" id="Gl4-fM-qiC" customClass="WalletViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kmD-NG-GCH"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9D-0y-wIb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="azr-Wv-Zqj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请选择日期" placeholder="请选择日期" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-Vl-flo">
+                                <rect key="frame" x="33" y="66" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="otj-D2-0Bh"/>
+                                </constraints>
+                                <color key="textColor" red="0.78823529410000004" green="0.68235294120000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="生美" placeholder="请选择日期" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmu-Qu-COl">
+                                <rect key="frame" x="326" y="66" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eCN-mM-xoD"/>
+                                </constraints>
+                                <color key="textColor" red="0.78823529410000004" green="0.68235294120000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入金额" placeholder="请选择日期" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-E2-KU3">
+                                <rect key="frame" x="33" y="129" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T3E-yJ-g6N"/>
+                                </constraints>
+                                <color key="textColor" red="0.78823529410000004" green="0.68235294120000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入点数" placeholder="请选择日期" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-d1-eK9">
+                                <rect key="frame" x="326" y="129" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JLD-bW-Bag"/>
+                                </constraints>
+                                <color key="textColor" red="0.78823529410000004" green="0.68235294120000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="备注" placeholder="请选择日期" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-3Y-vSK">
+                                <rect key="frame" x="33" y="199" width="533" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SHP-Xj-RAQ"/>
+                                </constraints>
+                                <color key="textColor" red="0.78823529410000004" green="0.68235294120000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIv-eb-nty">
+                                <rect key="frame" x="22" y="314" width="554" height="35"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.32156862749999998" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xOX-5F-6VK"/>
+                                </constraints>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wC8-E2-KU3" firstAttribute="top" secondItem="cPy-Vl-flo" secondAttribute="bottom" constant="33" id="0fU-Js-mfC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WIv-eb-nty" secondAttribute="trailing" constant="4" id="3ce-tk-zDr"/>
+                            <constraint firstItem="wC8-E2-KU3" firstAttribute="width" secondItem="gd4-d1-eK9" secondAttribute="width" id="61v-lb-1w4"/>
+                            <constraint firstItem="cPy-Vl-flo" firstAttribute="width" secondItem="fmu-Qu-COl" secondAttribute="width" id="Dqi-pS-p1w"/>
+                            <constraint firstItem="T2e-3Y-vSK" firstAttribute="leading" secondItem="azr-Wv-Zqj" secondAttribute="leadingMargin" constant="13" id="EPZ-vL-wke"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T2e-3Y-vSK" secondAttribute="trailing" constant="14" id="FD0-70-56G"/>
+                            <constraint firstItem="fmu-Qu-COl" firstAttribute="top" secondItem="kmD-NG-GCH" secondAttribute="bottom" constant="46" id="JeJ-DO-OCi"/>
+                            <constraint firstItem="fmu-Qu-COl" firstAttribute="leading" secondItem="cPy-Vl-flo" secondAttribute="trailing" constant="53" id="Jgd-f9-FXZ"/>
+                            <constraint firstItem="cPy-Vl-flo" firstAttribute="top" secondItem="kmD-NG-GCH" secondAttribute="bottom" constant="46" id="M3s-81-wlz"/>
+                            <constraint firstItem="fmu-Qu-COl" firstAttribute="leading" secondItem="cPy-Vl-flo" secondAttribute="trailing" constant="53" id="QPJ-Al-Ron"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fmu-Qu-COl" secondAttribute="trailing" constant="14" id="Ry6-iY-GO2"/>
+                            <constraint firstItem="T2e-3Y-vSK" firstAttribute="top" secondItem="gd4-d1-eK9" secondAttribute="bottom" constant="40" id="UQI-0N-Kea"/>
+                            <constraint firstItem="WIv-eb-nty" firstAttribute="top" secondItem="T2e-3Y-vSK" secondAttribute="bottom" constant="85" id="UkQ-xO-UZF"/>
+                            <constraint firstItem="wC8-E2-KU3" firstAttribute="leading" secondItem="azr-Wv-Zqj" secondAttribute="leadingMargin" constant="13" id="W86-Lf-USd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gd4-d1-eK9" secondAttribute="trailing" constant="14" id="Wax-Xw-M00"/>
+                            <constraint firstItem="gd4-d1-eK9" firstAttribute="leading" secondItem="wC8-E2-KU3" secondAttribute="trailing" constant="53" id="XyT-36-D0X"/>
+                            <constraint firstItem="gd4-d1-eK9" firstAttribute="leading" secondItem="wC8-E2-KU3" secondAttribute="trailing" constant="53" id="gzu-yr-Fn4"/>
+                            <constraint firstItem="cPy-Vl-flo" firstAttribute="leading" secondItem="azr-Wv-Zqj" secondAttribute="leadingMargin" constant="13" id="pJg-kn-Zu3"/>
+                            <constraint firstItem="gd4-d1-eK9" firstAttribute="top" secondItem="fmu-Qu-COl" secondAttribute="bottom" constant="33" id="rDr-nT-teU"/>
+                            <constraint firstItem="WIv-eb-nty" firstAttribute="leading" secondItem="azr-Wv-Zqj" secondAttribute="leadingMargin" constant="2" id="yqU-ow-MeM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYH-Ik-szw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="11159"/>
         </scene>
         <!--Cash View Controller-->
         <scene sceneID="NQU-30-2Di">
