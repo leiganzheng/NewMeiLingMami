@@ -1,25 +1,25 @@
 //
-//  WalletViewController.m
+//  SearchViewController.m
 //  MeiLing
 //
-//  Created by leiganzheng on 16/9/6.
+//  Created by leiganzheng on 16/9/7.
 //  Copyright © 2016年 karashock. All rights reserved.
 //
 
-#import "WalletViewController.h"
-
-@interface WalletViewController ()
+#import "SearchViewController.h"
+#import "Tool.h"
+@interface SearchViewController ()
 
 @end
 
-@implementation WalletViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"钱包";
     for (UIView *v in self.view.subviews) {
-        v.layer.masksToBounds = YES;
-        v.layer.cornerRadius = 5;
+        if ([v isKindOfClass:[UIButton class]]) {
+            [[Tool sharedInstance] comfingViewMask:v];
+        }
     }
 }
 

@@ -18,6 +18,8 @@
 #import "AppointmentMViewController.h"
 #import "ServiceProjectViewController.h"
 #import "DataAnalysisViewController.h"
+#import "MessageModelViewController.h"
+#import "RankingListViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
@@ -91,7 +93,7 @@
         
     }else if(indexPath.row == 4){
         
-        vc = [ActivityDayLogViewController CreateFromStoryboardWithName:@"Main"];
+        vc = [RankingListViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
         
     }else if(indexPath.row == 5){
@@ -101,7 +103,8 @@
 
         
     }else if(indexPath.row == 6){
-        vc = [AppointmentMViewController CreateFromStoryboardWithName:@"Main"];
+        
+        vc = [MessageModelViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
 
     }

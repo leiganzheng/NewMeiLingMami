@@ -7,6 +7,8 @@
 //
 
 #import "ServiceProjectViewController.h"
+#import "Define.h"
+#import "Tool.h"
 
 @interface ServiceProjectViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,75,30)];
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     [rightButton setImage:[UIImage imageNamed:@"icon-搜索"] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 
@@ -44,6 +46,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 40;
+}
+-(UIView* )tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,kScreenWidth,40)];
+    [rightButton setTitle:@"共计：1000元" forState:UIControlStateNormal];
+    rightButton.titleLabel.textAlignment = NSTextAlignmentRight;
+    [rightButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    return  rightButton;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * showUserInfoCellIdentifier = @"cell";
@@ -56,6 +69,7 @@
     }
     
     // Configure the cell.
+    [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
     return cell;
     
 }

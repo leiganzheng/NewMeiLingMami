@@ -64,6 +64,9 @@
         }
         
         // Configure the cell.
+        UIView *v = (UIView *)[cell viewWithTag:100];
+        v.layer.masksToBounds = YES;
+        v.layer.cornerRadius = 5;
         [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
         return cell;
     }else{
@@ -81,6 +84,8 @@
             }
             
             // Configure the cell.
+            UIView *v = (UIView *)[cell viewWithTag:99];
+             [[Tool sharedInstance] comfingViewMask:v];
             UIButton *btn = (UIButton *)[cell viewWithTag:100];
             [btn addTarget:self action:@selector(walletVC) forControlEvents:UIControlEventTouchUpInside];
             UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
@@ -105,7 +110,8 @@
             }
             
             // Configure the cell.
-            
+            UIView *v = (UIView *)[cell viewWithTag:99];
+            [[Tool sharedInstance] comfingViewMask:v];
             
             return cell;
 
@@ -123,7 +129,8 @@
             }
             
             // Configure the cell.
-            
+            UIView *v = (UIView *)[cell viewWithTag:99];
+            [[Tool sharedInstance] comfingViewMask:v];
             
             return cell;
 
@@ -141,7 +148,8 @@
             }
             
             // Configure the cell.
-            
+            UIView *v = (UIView *)[cell viewWithTag:99];
+            [[Tool sharedInstance] comfingViewMask:v];
             
             return cell;
 
@@ -160,7 +168,8 @@
             
             // Configure the cell.
             
-            
+            UIView *v = (UIView *)[cell viewWithTag:99];
+            [[Tool sharedInstance] comfingViewMask:v];
             return cell;
 
         }else{
@@ -177,6 +186,8 @@
             }
             
             // Configure the cell.
+            UIView *v = (UIView *)[cell viewWithTag:99];
+            [[Tool sharedInstance] comfingViewMask:v];
             UIButton *btn = (UIButton *)[cell viewWithTag:100];
             UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
             UIButton *btn2 = (UIButton *)[cell viewWithTag:102];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MessageModelViewController : UITabBarController
+@interface MessageModelViewController : UIViewController
 
 @end

@@ -23,7 +23,7 @@
     bar.barTintColor = kThemeColor;
     //设置字体颜色
     bar.tintColor = [UIColor whiteColor];
-    
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     return YES;
 }

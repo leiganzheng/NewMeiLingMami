@@ -7,7 +7,7 @@
 //
 
 #import "OrderMViewController.h"
-
+#import "Define.h"
 @interface OrderMViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
 
@@ -50,12 +50,19 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-        return 50.0f;
+        return 40.0f;
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    
-    return @"共21条记录";
-    
+
+-(UIView* )tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,kScreenWidth,40)];
+    [rightButton setTitle:@"共21条记录" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    return  rightButton;
 }
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    
+//    return @"共21条记录";
+//    
+//}
 @end

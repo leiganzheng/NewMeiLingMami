@@ -52,10 +52,10 @@
         
         // Configure the cell.
         cell.textLabel.text = self.data[indexPath.row];
-        UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth-80,5,60,30)];
-        [rightButton setTitle:@"请选择" forState:UIControlStateNormal];
-        [rightButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-        [rightButton addTarget:self action:@selector(upPush) forControlEvents:UIControlEventTouchUpInside];
+//        UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth-80,5,60,30)];
+//        [rightButton setTitle:@"请选择" forState:UIControlStateNormal];
+//        [rightButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+//        [rightButton addTarget:self action:@selector(upPush) forControlEvents:UIControlEventTouchUpInside];
         [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
         return cell;
 

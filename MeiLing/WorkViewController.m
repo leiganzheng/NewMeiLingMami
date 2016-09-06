@@ -47,6 +47,7 @@
     _btn2.layer.borderWidth = 0.5;
     _btn3.layer.borderColor = kThemeColor.CGColor;
     _btn3.layer.borderWidth = 0.5;
+    [_btn3 addTarget:self action:@selector(goalSet) forControlEvents:UIControlEventTouchUpInside];
     
     _btn11.layer.borderColor = kThemeColor.CGColor;
     _btn11.layer.borderWidth = 0.5;

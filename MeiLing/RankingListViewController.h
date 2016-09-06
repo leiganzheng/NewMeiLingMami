@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RankingListViewController : UITabBarController
+@interface RankingListViewController : UIViewController
 
 @end

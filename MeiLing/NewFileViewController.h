@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewFileViewController : UITabBarController
+@interface NewFileViewController : UIViewController
 
 @end
