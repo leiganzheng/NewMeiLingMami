@@ -17,6 +17,7 @@
 #import "ActivityDayLogViewController.h"
 #import "AppointmentMViewController.h"
 #import "ServiceProjectViewController.h"
+#import "DataAnalysisViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
@@ -94,12 +95,15 @@
         vc.hidesBottomBarWhenPushed = YES;
         
     }else if(indexPath.row == 5){
-        vc = [AppointmentMViewController CreateFromStoryboardWithName:@"Main"];
+        
+        vc = [DataAnalysisViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
 
         
     }else if(indexPath.row == 6){
-        
+        vc = [AppointmentMViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
+
     }
     if (vc != nil) {
         [self.navigationController pushViewController:vc animated:YES];

@@ -51,7 +51,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0 && indexPath.row == 0) {
+    if (indexPath.section == 0 ) {
         static NSString * showUserInfoCellIdentifier = @"cell1";
         UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
         if (cell == nil)
@@ -65,22 +65,128 @@
         [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
         return cell;
     }else{
-        static NSString * showUserInfoCellIdentifier = @"cell2";
-        UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-        if (cell == nil)
-        {
-            // Create a cell to display an ingredient.
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                          reuseIdentifier:showUserInfoCellIdentifier];
-            if (indexPath.section != 0) {
-                cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+        if (indexPath.row==0) {
+            static  NSString * showUserInfoCellIdentifier = @"cell2";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
             }
+            
+            // Configure the cell.
+            UIButton *btn = (UIButton *)[cell viewWithTag:100];
+            UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
+            UIButton *btn2 = (UIButton *)[cell viewWithTag:102];
+            [[Tool sharedInstance] comfingViewMask:btn1];
+            [[Tool sharedInstance] comfingViewMask:btn];
+             [[Tool sharedInstance] comfingViewMask:btn2];
+            
+            return cell;
+
+        }else if (indexPath.row==1){
+            static  NSString * showUserInfoCellIdentifier = @"cell3";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
+            }
+            
+            // Configure the cell.
+            
+            
+            return cell;
+
+        }else if (indexPath.row==2){
+            static  NSString * showUserInfoCellIdentifier = @"cell4";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
+            }
+            
+            // Configure the cell.
+            
+            
+            return cell;
+
+        }else if (indexPath.row==3){
+            static  NSString * showUserInfoCellIdentifier = @"cell5";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
+            }
+            
+            // Configure the cell.
+            
+            
+            return cell;
+
+        }else if (indexPath.row==4){
+            static  NSString * showUserInfoCellIdentifier = @"cell6";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
+            }
+            
+            // Configure the cell.
+            
+            
+            return cell;
+
+        }else{
+            static  NSString * showUserInfoCellIdentifier = @"cell7";
+            UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+            if (cell == nil)
+            {
+                // Create a cell to display an ingredient.
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+                if (indexPath.section != 0) {
+                    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+                }
+            }
+            
+            // Configure the cell.
+            UIButton *btn = (UIButton *)[cell viewWithTag:100];
+            UIButton *btn1 = (UIButton *)[cell viewWithTag:101];
+            UIButton *btn2 = (UIButton *)[cell viewWithTag:102];
+            UIButton *btn3 = (UIButton *)[cell viewWithTag:103];
+            [[Tool sharedInstance] comfingViewMask:btn1];
+            [[Tool sharedInstance] comfingViewMask:btn];
+            [[Tool sharedInstance] comfingViewMask:btn2];
+            [[Tool sharedInstance] comfingViewMask:btn3];
+            
+            return cell;
+
         }
         
-        // Configure the cell.
-    
-        [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
-        return cell;
     }
     
     

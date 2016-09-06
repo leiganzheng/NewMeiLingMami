@@ -41,6 +41,7 @@
 		BB2DBBFC1D7D5B2E00370D14 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */; };
 		BB719DC01D7E476D00AB772E /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DBF1D7E476D00AB772E /* WalletViewController.m */; };
 		BB719DC31D7E4D1F00AB772E /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */; };
+		BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,10 +126,12 @@
 		BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceProjectViewController.m; sourceTree = "<group>"; };
 		BB2DBBFA1D7D5B2E00370D14 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTabBarViewController.h; path = MeiLing/Main/BaseTabBarViewController.h; sourceTree = SOURCE_ROOT; };
 		BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTabBarViewController.m; path = MeiLing/Main/BaseTabBarViewController.m; sourceTree = SOURCE_ROOT; };
-		BB719DBE1D7E476D00AB772E /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
-		BB719DBF1D7E476D00AB772E /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		BB719DBE1D7E476D00AB772E /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WalletViewController.h; path = ../WalletViewController.h; sourceTree = "<group>"; };
+		BB719DBF1D7E476D00AB772E /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WalletViewController.m; path = ../WalletViewController.m; sourceTree = "<group>"; };
 		BB719DC11D7E4D1F00AB772E /* RankingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListViewController.h; sourceTree = "<group>"; };
 		BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListViewController.m; sourceTree = "<group>"; };
+		BB719DC41D7E72BE00AB772E /* DataAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAnalysisViewController.h; path = ../DataAnalysisViewController.h; sourceTree = "<group>"; };
+		BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAnalysisViewController.m; path = ../DataAnalysisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +200,6 @@
 				BB2DBBE51D7D1E0D00370D14 /* CashViewController.m */,
 				BB2DBBD81D7D173600370D14 /* GoalSettingViewController.h */,
 				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
-				BB719DBE1D7E476D00AB772E /* WalletViewController.h */,
-				BB719DBF1D7E476D00AB772E /* WalletViewController.m */,
 				BB719DC11D7E4D1F00AB772E /* RankingListViewController.h */,
 				BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */,
 				7165B7861D75D70A00012FA2 /* Base */,
@@ -300,6 +301,8 @@
 			children = (
 				716AB4CB1D7DC63600BCA6F0 /* MeViewController.h */,
 				716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */,
+				BB719DBE1D7E476D00AB772E /* WalletViewController.h */,
+				BB719DBF1D7E476D00AB772E /* WalletViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -317,6 +320,8 @@
 				716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */,
 				BB2DBBF71D7D501B00370D14 /* ServiceProjectViewController.h */,
 				BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */,
+				BB719DC41D7E72BE00AB772E /* DataAnalysisViewController.h */,
+				BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
 				BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */,
 				BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */,
+				BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */,
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,
 				716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */,
