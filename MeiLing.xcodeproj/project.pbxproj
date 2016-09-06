@@ -40,6 +40,7 @@
 		BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */; };
 		BB2DBBFC1D7D5B2E00370D14 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */; };
 		BB719DC01D7E476D00AB772E /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DBF1D7E476D00AB772E /* WalletViewController.m */; };
+		BB719DC31D7E4D1F00AB772E /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTabBarViewController.m; path = MeiLing/Main/BaseTabBarViewController.m; sourceTree = SOURCE_ROOT; };
 		BB719DBE1D7E476D00AB772E /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		BB719DBF1D7E476D00AB772E /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		BB719DC11D7E4D1F00AB772E /* RankingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListViewController.h; sourceTree = "<group>"; };
+		BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 				BB2DBBD91D7D173600370D14 /* GoalSettingViewController.m */,
 				BB719DBE1D7E476D00AB772E /* WalletViewController.h */,
 				BB719DBF1D7E476D00AB772E /* WalletViewController.m */,
+				BB719DC11D7E4D1F00AB772E /* RankingListViewController.h */,
+				BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */,
 				7165B7861D75D70A00012FA2 /* Base */,
 				7165B7871D75D70A00012FA2 /* Extension */,
 				7165B78A1D75D70A00012FA2 /* Tools */,
@@ -471,6 +476,7 @@
 				BB2DBBCB1D7D120A00370D14 /* PrivateLifeViewController.m in Sources */,
 				7165B7551D75D59B00012FA2 /* AppDelegate.m in Sources */,
 				BB2DBBFC1D7D5B2E00370D14 /* BaseTabBarViewController.m in Sources */,
+				BB719DC31D7E4D1F00AB772E /* RankingListViewController.m in Sources */,
 				BB719DC01D7E476D00AB772E /* WalletViewController.m in Sources */,
 				BB2DBBDD1D7D197000370D14 /* SalesLogViewController.m in Sources */,
 				BB2DBBCE1D7D139300370D14 /* SpecialDateViewController.m in Sources */,

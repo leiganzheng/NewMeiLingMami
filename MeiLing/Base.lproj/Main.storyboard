@@ -3273,6 +3273,87 @@
             </objects>
             <point key="canvasLocation" x="144" y="11159"/>
         </scene>
+        <!--Ranking List View Controller-->
+        <scene sceneID="xPa-Pt-gL1">
+            <objects>
+                <viewController storyboardIdentifier="RankingListViewController" id="2Yf-Pe-OBG" customClass="RankingListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a87-I1-vE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="keD-xz-zHn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21b-el-2CU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XIO-G4-aLT">
+                                <rect key="frame" x="0.0" y="32" width="600" height="568"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0YP-Wh-d4Y">
+                                    <size key="itemSize" width="254" height="193"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collection" id="UPg-A8-3Bq">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8c-jY-U1N">
+                                                    <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-FW-v4l">
+                                                            <rect key="frame" x="10" y="10" width="160" height="160"/>
+                                                            <state key="normal" title="Button">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Gta-FW-v4l" secondAttribute="trailing" constant="10" id="NZe-6O-UcC"/>
+                                                        <constraint firstItem="Gta-FW-v4l" firstAttribute="leading" secondItem="X8c-jY-U1N" secondAttribute="leading" constant="10" id="Q9M-FQ-IpC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Gta-FW-v4l" secondAttribute="bottom" constant="10" id="dP1-DE-f4s"/>
+                                                        <constraint firstItem="Gta-FW-v4l" firstAttribute="top" secondItem="X8c-jY-U1N" secondAttribute="top" constant="10" id="loz-SR-j8F"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="X8c-jY-U1N" firstAttribute="leading" secondItem="UPg-A8-3Bq" secondAttribute="leadingMargin" constant="2" id="BdC-uX-m2Z"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="X8c-jY-U1N" secondAttribute="trailing" constant="2" id="Pdp-ki-vaW"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="X8c-jY-U1N" secondAttribute="bottom" constant="2" id="ZJn-PN-HsF"/>
+                                            <constraint firstItem="X8c-jY-U1N" firstAttribute="top" secondItem="UPg-A8-3Bq" secondAttribute="topMargin" constant="2" id="zrQ-K4-uNs"/>
+                                        </constraints>
+                                        <size key="customSize" width="200" height="200"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Yf-Pe-OBG" id="M1O-IE-1Ix"/>
+                                    <outlet property="delegate" destination="2Yf-Pe-OBG" id="5bi-iS-IRn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XIO-G4-aLT" firstAttribute="top" secondItem="a87-I1-vE9" secondAttribute="bottom" constant="12" id="8zx-hs-Ti9"/>
+                            <constraint firstItem="XIO-G4-aLT" firstAttribute="leading" secondItem="21b-el-2CU" secondAttribute="leadingMargin" constant="-20" id="lg3-6G-yhL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XIO-G4-aLT" secondAttribute="trailing" constant="-20" id="wb6-bs-DjF"/>
+                            <constraint firstItem="keD-xz-zHn" firstAttribute="top" secondItem="XIO-G4-aLT" secondAttribute="bottom" id="zYc-UR-m0Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customCollectionView" destination="XIO-G4-aLT" id="KDk-kt-Lyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJb-k2-Yrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="11840"/>
+        </scene>
         <!--Cash View Controller-->
         <scene sceneID="NQU-30-2Di">
             <objects>
