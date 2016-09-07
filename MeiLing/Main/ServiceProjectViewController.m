@@ -8,6 +8,8 @@
 
 #import "ServiceProjectViewController.h"
 #import "Define.h"
+#import "AppointmentMViewController.h"
+#import "UIResponder+StoryBoard.h"
 #import "Tool.h"
 
 @interface ServiceProjectViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -19,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"服务项目";
     UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     [rightButton setImage:[UIImage imageNamed:@"icon-搜索"] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
@@ -72,6 +74,9 @@
     [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
     return cell;
     
+}
+- (IBAction)makeOrder:(id)sender {
+    [self.navigationController pushViewController:[AppointmentMViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
 }
 
 

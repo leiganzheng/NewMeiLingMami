@@ -75,7 +75,7 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:showUserInfoCellIdentifier];
         }
-        for (UIView *v in cell.subviews) {
+        for (UIView *v in cell.contentView.subviews) {
             if ([v isKindOfClass:[UIButton class]]) {
                 [[Tool sharedInstance] comfingView:v];
             }
