@@ -1,24 +1,5 @@
 /**********************************************
 // ******* 本文件对该项目做一个简单的说明 ******* //
-#pragma mark - 支持ReactiveCocoa和Pods
-1、工程支持ReactiveCocoa 框架。
-ReactiveCocoa框架概览：http://blog.csdn.net/xdrt81y/article/details/30624469
-Github地址：https://github.com/ReactiveCocoa/ReactiveCocoa
-说明:
-ReactiveCocoa使用例子：
-//标准按钮事件处理方式
-[UIButton addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
-//使用ReavtiveCocoa 按钮事件处理方式 针对UIControlEventTouchUpInside事件 以及循环引用处理方式
-@weakify(self);
-UIButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-@strongify(self);
-//something to do ;
-return [RACSignal empty];
-}];
-
-2、使用CocoaPods管理第三方库。
-教程地址：http://code4app.com/article/cocoapods-install-usage
-
 
 #pragma mark - 开发注意：
 ·· AppID 和 SKU 已经有定义好的宏，不允许直接使用 @"...", 有用到的地方，必须用宏定义 APP_ID APP_SKU

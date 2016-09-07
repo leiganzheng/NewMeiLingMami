@@ -26,7 +26,7 @@
 		716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C51D7D957000BCA6F0 /* AppointmentMViewController.m */; };
 		716AB4C91D7D957000BCA6F0 /* MakeAppointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */; };
 		716AB4CD1D7DC63600BCA6F0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */; };
-		716AB4D51D7F302900BCA6F0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4D41D7F302900BCA6F0 /* SearchViewController.m */; };
+		716AB4D91D8060EF00BCA6F0 /* QNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AB4D81D8060EF00BCA6F0 /* QNTabBarController.swift */; };
 		BB2DBBC01D7D094100370D14 /* DistributionCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */; };
 		BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC21D7D0D8E00370D14 /* CustomInfoViewController.m */; };
 		BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBBC71D7D114200370D14 /* PrivateTopicViewController.m */; };
@@ -106,8 +106,8 @@
 		716AB4C71D7D957000BCA6F0 /* MakeAppointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeAppointViewController.m; sourceTree = "<group>"; };
 		716AB4CB1D7DC63600BCA6F0 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		716AB4CC1D7DC63600BCA6F0 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		716AB4D31D7F302900BCA6F0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		716AB4D41D7F302900BCA6F0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		716AB4D71D8060EF00BCA6F0 /* MeiLing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeiLing-Bridging-Header.h"; sourceTree = "<group>"; };
+		716AB4D81D8060EF00BCA6F0 /* QNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNTabBarController.swift; sourceTree = "<group>"; };
 		BB2DBBBE1D7D094100370D14 /* DistributionCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionCustomerViewController.h; sourceTree = "<group>"; };
 		BB2DBBBF1D7D094100370D14 /* DistributionCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionCustomerViewController.m; sourceTree = "<group>"; };
 		BB2DBBC11D7D0D8E00370D14 /* CustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInfoViewController.h; path = ../CustomInfoViewController.h; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 				BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */,
 				BB6DDE091D7EB4B9006EB0F0 /* NewFileViewController.h */,
 				BB6DDE0A1D7EB4B9006EB0F0 /* NewFileViewController.m */,
-				7165B7861D75D70A00012FA2 /* Base */,
+				716AB4D61D8060BF00BCA6F0 /* Base */,
 				7165B7871D75D70A00012FA2 /* Extension */,
 				7165B78A1D75D70A00012FA2 /* Tools */,
 				7165B7881D75D70A00012FA2 /* Librarys */,
@@ -264,15 +264,6 @@
 				7165B7771D75D59B00012FA2 /* Info.plist */,
 			);
 			path = MeiLingUITests;
-			sourceTree = "<group>";
-		};
-		7165B7861D75D70A00012FA2 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				BB2DBBFA1D7D5B2E00370D14 /* BaseTabBarViewController.h */,
-				BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		7165B7871D75D70A00012FA2 /* Extension */ = {
@@ -329,6 +320,18 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		716AB4D61D8060BF00BCA6F0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BB2DBBFA1D7D5B2E00370D14 /* BaseTabBarViewController.h */,
+				BB2DBBFB1D7D5B2E00370D14 /* BaseTabBarViewController.m */,
+				716AB4D81D8060EF00BCA6F0 /* QNTabBarController.swift */,
+				716AB4D71D8060EF00BCA6F0 /* MeiLing-Bridging-Header.h */,
+			);
+			name = Base;
+			path = MeiLing/Base;
+			sourceTree = SOURCE_ROOT;
+		};
 		BB2DBBC41D7D10D300370D14 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,8 +347,6 @@
 				BBD200701D7FE83F00F5F942 /* MemberModel.m */,
 				BBD200721D7FE88C00F5F942 /* MemberGroup.h */,
 				BBD200731D7FE88C00F5F942 /* MemberGroup.m */,
-				716AB4D31D7F302900BCA6F0 /* SearchViewController.h */,
-				716AB4D41D7F302900BCA6F0 /* SearchViewController.m */,
 				BB2DBBF71D7D501B00370D14 /* ServiceProjectViewController.h */,
 				BB2DBBF81D7D501B00370D14 /* ServiceProjectViewController.m */,
 				BB719DC41D7E72BE00AB772E /* DataAnalysisViewController.h */,
@@ -520,6 +521,7 @@
 				716AB4C91D7D957000BCA6F0 /* MakeAppointViewController.m in Sources */,
 				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
 				BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */,
+				716AB4D91D8060EF00BCA6F0 /* QNTabBarController.swift in Sources */,
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
 				BBD200741D7FE88C00F5F942 /* MemberGroup.m in Sources */,
 				BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */,
@@ -528,7 +530,6 @@
 				716AB4AD1D7B1AD600BCA6F0 /* OrderMViewController.m in Sources */,
 				BB719DC91D7E99CD00AB772E /* MessageModelViewController.m in Sources */,
 				BB2DBBE61D7D1E0D00370D14 /* CashViewController.m in Sources */,
-				716AB4D51D7F302900BCA6F0 /* SearchViewController.m in Sources */,
 				716AB4BF1D7C8FD600BCA6F0 /* ActivityDayLogViewController.m in Sources */,
 				BB2DBBE31D7D1D8300370D14 /* YearCardViewController.m in Sources */,
 				7165B7521D75D59B00012FA2 /* main.m in Sources */,
@@ -685,11 +686,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MeiLing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leiganzheng.MeiLing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MeiLing/Base/MeiLing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -698,11 +702,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MeiLing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leiganzheng.MeiLing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MeiLing/Base/MeiLing-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

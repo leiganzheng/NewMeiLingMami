@@ -11,7 +11,6 @@
 #import "UIResponder+StoryBoard.h"
 #import "Define.h"
 #import "Tool.h"
-#import "SearchViewController.h"
 #import "MemberModel.h"
 #import "MemberGroup.h"
 
@@ -25,17 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,40,40)];
     [rightButton setImage:[UIImage imageNamed:@"加"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
     
-    
-    SearchViewController *sear = [SearchViewController CreateFromStoryboardWithName:@"Main"];
-    sear.view.frame = CGRectMake(0, 0, kScreenWidth, 200);
-    self.customTable.tableHeaderView = sear.view;
-    
+    [self  initData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,34 +53,49 @@
     return group.name;
 }
 -(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
-    NSMutableArray *indexs=[[NSMutableArray alloc]init];
-    for(MemberGroup *group in self.data){
-        [indexs addObject:group.name];
+
+    NSMutableArray *toBeReturned = [[NSMutableArray alloc]init];
+    [toBeReturned addObject:[NSString stringWithFormat:@"%c",'#']];
+    for(char c = 'A';c<='Z';c++){
+        [toBeReturned addObject:[NSString stringWithFormat:@"%c",c]];
     }
-    return indexs;
+    
+    return toBeReturned;
 }
 #pragma mark 返回每组尾部说明
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    MemberGroup *group=self.data[section];
-    return group.detail;
-}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * showUserInfoCellIdentifier = @"cell";
-    UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-    if (cell == nil)
-    {
-        // Create a cell to display an ingredient.
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:showUserInfoCellIdentifier];
+    if (indexPath.section == 0) {
+        static NSString * showUserInfoCellIdentifier = @"cell1";
+        UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+        if (cell == nil)
+        {
+            // Create a cell to display an ingredient.
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                          reuseIdentifier:showUserInfoCellIdentifier];
+        }
+        for (UIView *v in cell.subviews) {
+            if ([v isKindOfClass:[UIButton class]]) {
+                [[Tool sharedInstance] comfingView:v];
+            }
+        }
+         return cell;
+    }else{
+        static NSString * showUserInfoCellIdentifier = @"cell";
+        UITableViewCell * cell = [self.customTable dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+        if (cell == nil)
+        {
+            // Create a cell to display an ingredient.
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                          reuseIdentifier:showUserInfoCellIdentifier];
+        }
+        
+        // Configure the cell.
+
+        return cell;
     }
-    
-    // Configure the cell.
-    MemberGroup *group=self.data[indexPath.section];
-    MemberModel *contact=group.contacts[indexPath.row];
-    cell.textLabel.text=[contact getName];
-    return cell;
-    
+
 }
 
 
@@ -95,6 +105,10 @@
 #pragma mark - private method
 -(void)initData{
     self.data =[[NSMutableArray alloc]init];
+    
+    MemberModel *contact=[MemberModel initWithFirstName:@"default" andLastName:@"" andPhoneNumber:@""];
+    MemberGroup *group=[MemberGroup initWithName:@"" andDetail:@"With names beginning with C" andContacts:[NSMutableArray arrayWithObjects:contact, nil]];
+    [self.data addObject:group];
     
      MemberModel *contact1=[MemberModel initWithFirstName:@"Cui" andLastName:@"Kenshin" andPhoneNumber:@"18500131234"];
     MemberModel *contact2=[MemberModel initWithFirstName:@"Cui" andLastName:@"Tom" andPhoneNumber:@"18500131237"];
