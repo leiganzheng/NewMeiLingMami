@@ -207,7 +207,9 @@
 }
 #pragma mark - private method
 - (void)walletVC{
-    [self.navigationController pushViewController:[WalletViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
+    UIViewController *vc = [WalletViewController CreateFromStoryboardWithName:@"Main"];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
