@@ -46,6 +46,8 @@
 		BB719DC31D7E4D1F00AB772E /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC21D7E4D1F00AB772E /* RankingListViewController.m */; };
 		BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */; };
 		BB719DC91D7E99CD00AB772E /* MessageModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */; };
+		BBD200711D7FE83F00F5F942 /* MemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD200701D7FE83F00F5F942 /* MemberModel.m */; };
+		BBD200741D7FE88C00F5F942 /* MemberGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD200731D7FE88C00F5F942 /* MemberGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,10 @@
 		BB719DC51D7E72BE00AB772E /* DataAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAnalysisViewController.m; path = ../DataAnalysisViewController.m; sourceTree = "<group>"; };
 		BB719DC71D7E99CD00AB772E /* MessageModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelViewController.h; sourceTree = "<group>"; };
 		BB719DC81D7E99CD00AB772E /* MessageModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelViewController.m; sourceTree = "<group>"; };
+		BBD2006F1D7FE83F00F5F942 /* MemberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberModel.h; sourceTree = "<group>"; };
+		BBD200701D7FE83F00F5F942 /* MemberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberModel.m; sourceTree = "<group>"; };
+		BBD200721D7FE88C00F5F942 /* MemberGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberGroup.h; sourceTree = "<group>"; };
+		BBD200731D7FE88C00F5F942 /* MemberGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +340,10 @@
 				716AB4AC1D7B1AD600BCA6F0 /* OrderMViewController.m */,
 				716AB4AE1D7C5ED500BCA6F0 /* MemberMViewController.h */,
 				716AB4AF1D7C5ED500BCA6F0 /* MemberMViewController.m */,
+				BBD2006F1D7FE83F00F5F942 /* MemberModel.h */,
+				BBD200701D7FE83F00F5F942 /* MemberModel.m */,
+				BBD200721D7FE88C00F5F942 /* MemberGroup.h */,
+				BBD200731D7FE88C00F5F942 /* MemberGroup.m */,
 				716AB4D31D7F302900BCA6F0 /* SearchViewController.h */,
 				716AB4D41D7F302900BCA6F0 /* SearchViewController.m */,
 				BB2DBBF71D7D501B00370D14 /* ServiceProjectViewController.h */,
@@ -511,6 +521,7 @@
 				716AB4B31D7C682600BCA6F0 /* MainViewController.m in Sources */,
 				BB2DBBC31D7D0D8E00370D14 /* CustomInfoViewController.m in Sources */,
 				716AB4B61D7C6CD800BCA6F0 /* Tool.m in Sources */,
+				BBD200741D7FE88C00F5F942 /* MemberGroup.m in Sources */,
 				BB2DBBF91D7D501B00370D14 /* ServiceProjectViewController.m in Sources */,
 				BB2DBBC81D7D114200370D14 /* PrivateTopicViewController.m in Sources */,
 				BB719DC61D7E72BE00AB772E /* DataAnalysisViewController.m in Sources */,
@@ -525,6 +536,7 @@
 				BB2DBBDA1D7D173600370D14 /* GoalSettingViewController.m in Sources */,
 				BB2DBBEA1D7D497600370D14 /* AccountInfoViewController.m in Sources */,
 				716AB4C81D7D957000BCA6F0 /* AppointmentMViewController.m in Sources */,
+				BBD200711D7FE83F00F5F942 /* MemberModel.m in Sources */,
 				716AB4AA1D7B1AB900BCA6F0 /* WorkViewController.m in Sources */,
 				BB6DDE0B1D7EB4B9006EB0F0 /* NewFileViewController.m in Sources */,
 				716AB4CD1D7DC63600BCA6F0 /* MeViewController.m in Sources */,

@@ -12,11 +12,12 @@
 #import "Define.h"
 #import "Tool.h"
 #import "SearchViewController.h"
+#import "MemberModel.h"
+#import "MemberGroup.h"
 
 @interface MemberMViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
-@property (strong,nonatomic) NSArray *data;
-@property (strong,nonatomic) NSMutableArray *toBeReturned;
+@property (strong,nonatomic) NSMutableArray *data;
 
 @end
 
@@ -29,13 +30,7 @@
     [rightButton setImage:[UIImage imageNamed:@"加"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-    self.data = @[@"A",@"B",@"C"];
     
-    self.toBeReturned = [[NSMutableArray alloc]init];
-    
-    for(char c = 'A';c<='Z';c++){
-        [_toBeReturned addObject:[NSString stringWithFormat:@"%c",c]];
-    }
     
     SearchViewController *sear = [SearchViewController CreateFromStoryboardWithName:@"Main"];
     sear.view.frame = CGRectMake(0, 0, kScreenWidth, 200);
@@ -47,12 +42,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.data.count;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.data.count;
+    MemberGroup *group=self.data[section];
+    return group.contacts.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 120;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    MemberGroup *group=self.data[section];
+    return group.name;
+}
+-(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    NSMutableArray *indexs=[[NSMutableArray alloc]init];
+    for(MemberGroup *group in self.data){
+        [indexs addObject:group.name];
+    }
+    return indexs;
+}
+#pragma mark 返回每组尾部说明
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    MemberGroup *group=self.data[section];
+    return group.detail;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -66,74 +81,59 @@
     }
     
     // Configure the cell.
+    MemberGroup *group=self.data[indexPath.section];
+    MemberModel *contact=group.contacts[indexPath.row];
+    cell.textLabel.text=[contact getName];
     return cell;
     
 }
 
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-    
-    NSString *key = [_toBeReturned objectAtIndex:index];
-    if (key == UITableViewIndexSearch) {
-        [self.customTable setContentOffset:CGPointZero animated:NO];
-        return NSNotFound;
-    }
-    
-    return index;
-}
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-
-{
-    
-    return _toBeReturned;
-    
-}
-
-//- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
-//
-//{
-//    
-//    NSInteger count = 0;
-//    
-//    for(NSString *character in self.data)
-//        
-//    {
-//        
-//        if([character isEqualToString:title])
-//            
-//        {
-//            
-//            return count;
-//        
-//        }
-//        
-//        count ++;
-//        
-//    }
-//    
-//    return 0;
-//    
-//}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-
-{
-    
-    if([self.data count]==0)
-        
-    {
-        
-        return @"";
-        
-    }
-    
-        return [self.data objectAtIndex:section];
-    
-}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
      [self.navigationController pushViewController:[CustomInfoViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
 }
 #pragma mark - private method
+-(void)initData{
+    self.data =[[NSMutableArray alloc]init];
+    
+     MemberModel *contact1=[MemberModel initWithFirstName:@"Cui" andLastName:@"Kenshin" andPhoneNumber:@"18500131234"];
+    MemberModel *contact2=[MemberModel initWithFirstName:@"Cui" andLastName:@"Tom" andPhoneNumber:@"18500131237"];
+    MemberGroup *group1=[MemberGroup initWithName:@"C" andDetail:@"With names beginning with C" andContacts:[NSMutableArray arrayWithObjects:contact1,contact2, nil]];
+    [self.data addObject:group1];
+    
+    
+    
+    MemberModel *contact3=[MemberModel initWithFirstName:@"Lee" andLastName:@"Terry" andPhoneNumber:@"18500131238"];
+    MemberModel *contact4=[MemberModel initWithFirstName:@"Lee" andLastName:@"Jack" andPhoneNumber:@"18500131239"];
+    MemberModel *contact5=[MemberModel initWithFirstName:@"Lee" andLastName:@"Rose" andPhoneNumber:@"18500131240"];
+    MemberGroup *group2=[MemberGroup initWithName:@"L" andDetail:@"With names beginning with L" andContacts:[NSMutableArray arrayWithObjects:contact3,contact4,contact5, nil]];
+    [self.data addObject:group2];
+    
+    
+    
+    MemberModel *contact6=[MemberModel initWithFirstName:@"Sun" andLastName:@"Kaoru" andPhoneNumber:@"18500131235"];
+    MemberModel *contact7=[MemberModel initWithFirstName:@"Sun" andLastName:@"Rosa" andPhoneNumber:@"18500131236"];
+    
+    MemberGroup *group3=[MemberGroup initWithName:@"S" andDetail:@"With names beginning with S" andContacts:[NSMutableArray arrayWithObjects:contact6,contact7, nil]];
+    [self.data addObject:group3];
+    
+    
+    MemberModel *contact8=[MemberModel initWithFirstName:@"Wang" andLastName:@"Stephone" andPhoneNumber:@"18500131241"];
+    MemberModel *contact9=[MemberModel initWithFirstName:@"Wang" andLastName:@"Lucy" andPhoneNumber:@"18500131242"];
+    MemberModel *contact10=[MemberModel initWithFirstName:@"Wang" andLastName:@"Lily" andPhoneNumber:@"18500131243"];
+    MemberModel *contact11=[MemberModel initWithFirstName:@"Wang" andLastName:@"Emily" andPhoneNumber:@"18500131244"];
+    MemberModel *contact12=[MemberModel initWithFirstName:@"Wang" andLastName:@"Andy" andPhoneNumber:@"18500131245"];
+    MemberGroup *group4=[MemberGroup initWithName:@"W" andDetail:@"With names beginning with W" andContacts:[NSMutableArray arrayWithObjects:contact8,contact9,contact10,contact11,contact12, nil]];
+    [self.data addObject:group4];
+    
+    
+    MemberModel *contact13=[MemberModel initWithFirstName:@"Zhang" andLastName:@"Joy" andPhoneNumber:@"18500131246"];
+    MemberModel *contact14=[MemberModel initWithFirstName:@"Zhang" andLastName:@"Vivan" andPhoneNumber:@"18500131247"];
+    MemberModel *contact15=[MemberModel initWithFirstName:@"Zhang" andLastName:@"Joyse" andPhoneNumber:@"18500131248"];
+    MemberGroup *group5=[MemberGroup initWithName:@"Z" andDetail:@"With names beginning with Z" andContacts:[NSMutableArray arrayWithObjects:contact13,contact14,contact15, nil]];
+    [self.data addObject:group5];
+    
+}
 - (void)add{
     [self.navigationController pushViewController:[CustomInfoViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
 }
