@@ -52,6 +52,12 @@
     UIButton *btn = (UIButton *)[cell viewWithTag:100];
     [btn setImage:[UIImage imageNamed:self.images[indexPath.row]] forState:UIControlStateNormal];
     [btn setTitle:self.data[indexPath.row] forState:UIControlStateNormal];
+    for (UIView *v in cell.contentView.subviews) {
+        if ([v isKindOfClass:[UIView class]]) {
+            v.layer.masksToBounds = YES;
+            v.layer.cornerRadius = 5;
+        }
+    }
     return cell;
 }
 

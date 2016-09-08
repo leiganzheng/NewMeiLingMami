@@ -31,7 +31,7 @@
 - (void)comfingView:(UIView *)v{
     v.layer.cornerRadius = 5;
     v.layer.masksToBounds = YES;
-    v.layer.borderColor = kThemeColor.CGColor;
+    v.layer.borderColor = [UIColor colorWithRed:212/255.0f green:192/255.0f blue:157/255.0f alpha:1.0f].CGColor;
     v.layer.borderWidth = 1;
 }
 -(void)comfingViewMask:(UIView *)v{
@@ -41,7 +41,7 @@
 
 -(void)addLine:(UIView *)v withColor:(UIColor *)color{
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, v.frame.size.height-1, v.frame.size.width, 0.5)];
-    line.backgroundColor = color;
+    line.backgroundColor = [UIColor colorWithRed:212/255.0f green:192/255.0f blue:157/255.0f alpha:1.0f];
     [v addSubview:line];
 }
 - (void)enterRootViewController:(UIViewController *)vc animated:(BOOL)animated{

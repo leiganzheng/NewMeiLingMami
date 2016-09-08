@@ -86,6 +86,7 @@
         if (indexPath.section != 0) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
+        cell.textLabel.textColor = [UIColor lightGrayColor];
         cell.textLabel.text = self.data[indexPath.section][indexPath.row];
         [[Tool sharedInstance] addLine:cell withColor:kThemeColor];
         return cell;
