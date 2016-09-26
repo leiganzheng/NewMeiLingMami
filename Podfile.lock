@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - DACircularProgress (2.3.1)
+  - IQKeyboardManager (3.3.4)
+  - MBProgressHUD (0.9.2)
+  - MGSwipeTableCell (1.5.3)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - OpenUDID (1.0.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - WebViewJavascriptBridge (4.1.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Aspects
+  - IQKeyboardManager
+  - MBProgressHUD
+  - MGSwipeTableCell
+  - MWPhotoBrowser
+  - OpenUDID
+  - SDWebImage
+  - WebViewJavascriptBridge
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MGSwipeTableCell: 5ae3b9a15efda26b201adc8676b24040febe6ff6
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  WebViewJavascriptBridge: e7b6669bebfc4f151daa0fdec3c8c24c8dc3a24e
+
+COCOAPODS: 0.39.0
