@@ -25,6 +25,7 @@
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
 @property (weak, nonatomic) IBOutlet UICollectionView *customCollectionV;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *top;
 @property (strong, nonatomic) NSArray *dataArray;
 @property (strong, nonatomic) NSArray *imageArray;
 @end
@@ -48,6 +49,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 #pragma mark -- UICollectionViewDataSource
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -132,7 +134,10 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
-    return CGSizeMake(kScreenWidth, 220);
+    if ([self checkDevice:@"iPad"]) {
+        return CGSizeMake(kScreenWidth, 400);
+    }
+    return CGSizeMake(kScreenWidth, 240);
 }
 #pragma mark --UICollectionViewDelegateFlowLayout
 //定义每个UICollectionView 的大小
@@ -147,7 +152,15 @@
 }
 
 #pragma mark - private method
+-(bool)checkDevice:(NSString*)name
 
+{
+    NSString* deviceType = [UIDevice currentDevice].model;
+    NSLog(@"deviceType = %@", deviceType);
+    
+    NSRange range = [deviceType rangeOfString:name];
+    return range.location != NSNotFound;
+}
 - (void)searchprogram{
     
 }

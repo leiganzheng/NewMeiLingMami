@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L1J-cV-vbl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L1J-cV-vbl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -87,16 +87,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="首页banner" translatesAutoresizingMaskIntoConstraints="NO" id="52h-7F-AdU">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页banner" translatesAutoresizingMaskIntoConstraints="NO" id="52h-7F-AdU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="181"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="181" id="bTY-hn-6ZP"/>
-                                                <constraint firstAttribute="height" constant="181" id="tdc-P0-qEZ"/>
+                                                <constraint firstAttribute="height" constant="181" id="gSM-Ed-ehC"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="bTY-hn-6ZP"/>
+                                                    <exclude reference="gSM-Ed-ehC"/>
                                                 </mask>
                                             </variation>
                                         </imageView>
@@ -104,7 +105,7 @@
                                             <rect key="frame" x="20" y="183" width="560" height="34"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="34" id="Pl3-Bl-PPL"/>
+                                                <constraint firstAttribute="height" constant="34" id="jhB-Rw-pWu"/>
                                             </constraints>
                                             <state key="normal" title="下载美龄国际APP即送 999 元大礼包">
                                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,19 +114,23 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="sr4-e2-oga" secondAttribute="trailing" constant="12" id="1mm-51-L32"/>
+                                        <constraint firstItem="sr4-e2-oga" firstAttribute="top" secondItem="52h-7F-AdU" secondAttribute="bottom" constant="2" id="0QJ-x3-n58"/>
                                         <constraint firstItem="sr4-e2-oga" firstAttribute="top" secondItem="52h-7F-AdU" secondAttribute="bottom" constant="2" id="2gH-k9-mIF"/>
+                                        <constraint firstItem="52h-7F-AdU" firstAttribute="leading" secondItem="Op7-M4-fW4" secondAttribute="leadingMargin" constant="-8" id="7Dn-rN-g0G"/>
                                         <constraint firstItem="sr4-e2-oga" firstAttribute="top" secondItem="52h-7F-AdU" secondAttribute="bottom" constant="2" id="7eF-Wb-jgO"/>
-                                        <constraint firstItem="52h-7F-AdU" firstAttribute="top" secondItem="Op7-M4-fW4" secondAttribute="topMargin" id="833-on-LGL"/>
-                                        <constraint firstItem="52h-7F-AdU" firstAttribute="leading" secondItem="Op7-M4-fW4" secondAttribute="leadingMargin" constant="-8" id="JrW-y2-x1n"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="sr4-e2-oga" secondAttribute="bottom" constant="-5" id="TfS-gY-3YS"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="52h-7F-AdU" secondAttribute="trailing" constant="-8" id="mJe-Kx-bv5"/>
-                                        <constraint firstItem="sr4-e2-oga" firstAttribute="leading" secondItem="Op7-M4-fW4" secondAttribute="leadingMargin" constant="12" id="syz-BS-0Uu"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sr4-e2-oga" secondAttribute="trailing" constant="12" id="898-tm-dqC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="52h-7F-AdU" secondAttribute="trailing" constant="-8" id="8gc-Yc-Pgk"/>
+                                        <constraint firstItem="sr4-e2-oga" firstAttribute="top" secondItem="52h-7F-AdU" secondAttribute="bottom" constant="2" id="Lkb-ur-ci3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sr4-e2-oga" secondAttribute="bottom" constant="-5" id="TC9-no-58f"/>
+                                        <constraint firstItem="52h-7F-AdU" firstAttribute="top" secondItem="Op7-M4-fW4" secondAttribute="topMargin" constant="-8" id="Xs6-vv-Oey"/>
+                                        <constraint firstItem="sr4-e2-oga" firstAttribute="top" secondItem="52h-7F-AdU" secondAttribute="bottom" constant="2" id="fh4-VK-qxb"/>
+                                        <constraint firstItem="sr4-e2-oga" firstAttribute="leading" secondItem="Op7-M4-fW4" secondAttribute="leadingMargin" constant="12" id="gxW-zi-reQ"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="2gH-k9-mIF"/>
                                             <exclude reference="7eF-Wb-jgO"/>
+                                            <exclude reference="fh4-VK-qxb"/>
                                         </mask>
                                     </variation>
                                 </collectionReusableView>
@@ -147,6 +152,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="customCollectionV" destination="kwn-TJ-Jrd" id="w1n-RU-sGo"/>
+                        <outlet property="top" destination="bJR-NQ-uHc" id="ZHe-h0-Ogv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr8-xT-GXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
