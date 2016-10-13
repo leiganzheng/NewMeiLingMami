@@ -21,6 +21,7 @@
 #import "MessageModelViewController.h"
 #import "RankingListViewController.h"
 #import "CollectionHeaderView.h"
+#import "YSViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *downLoadBtn;
@@ -111,6 +112,9 @@
         vc = [MessageModelViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
 
+    }else if(indexPath.row == 7){
+        vc = [YSViewController CreateFromStoryboardWithName:@"Main"];
+        vc.hidesBottomBarWhenPushed = YES;
     }
     if (vc != nil) {
         [self.navigationController pushViewController:vc animated:YES];
