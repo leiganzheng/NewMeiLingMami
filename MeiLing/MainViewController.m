@@ -112,9 +112,6 @@
         vc = [MessageModelViewController CreateFromStoryboardWithName:@"Main"];
         vc.hidesBottomBarWhenPushed = YES;
 
-    }else if(indexPath.row == 7){
-        vc = [YSViewController CreateFromStoryboardWithName:@"Main"];
-        vc.hidesBottomBarWhenPushed = YES;
     }
     if (vc != nil) {
         [self.navigationController pushViewController:vc animated:YES];

@@ -179,7 +179,7 @@
         <!--微课堂-->
         <scene sceneID="fRI-OR-ydH">
             <objects>
-                <viewController id="TU8-nV-5YK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YSViewController" id="TU8-nV-5YK" customClass="YSViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tz2-AY-wJB"/>
                         <viewControllerLayoutGuide type="bottom" id="FoK-V7-xN6"/>
@@ -4569,7 +4569,7 @@
         <!--View Controller-->
         <scene sceneID="ccR-Sy-2eM">
             <objects>
-                <viewController storyboardIdentifier="YSViewController" id="HHc-a9-Xp7" customClass="YSViewController" sceneMemberID="viewController">
+                <viewController id="HHc-a9-Xp7" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="btm-0Y-BfA"/>
                         <viewControllerLayoutGuide type="bottom" id="cjX-ea-Kv2"/>
