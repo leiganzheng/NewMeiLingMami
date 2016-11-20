@@ -8,6 +8,9 @@
 
 #import "OrderMViewController.h"
 #import "Define.h"
+#import "MakeAppointViewController.h"
+#import "UIResponder+StoryBoard.h"
+
 @interface OrderMViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *customTable;
 
@@ -19,6 +22,12 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.title = @"订单信息";
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,40,40)];
+//    [rightButton setImage:[UIImage imageNamed:@"加"] forState:UIControlStateNormal];
+    [rightButton setTitle:@"预约" forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(appoint) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,4 +74,8 @@
 //    return @"共21条记录";
 //    
 //}
+- (void)appoint{
+    [self.navigationController pushViewController:[MakeAppointViewController CreateFromStoryboardWithName:@"Main"] animated:YES];
+
+}
 @end
